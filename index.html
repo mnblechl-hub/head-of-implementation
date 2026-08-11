@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Control Plane — technical enterprise deployment infrastructure for Heidi." />
+  <title>Control Plane — Enterprise delivery infrastructure</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#" aria-label="Control Plane home">
+        <span class="brand-mark"><i></i><i></i><i></i></span>
+        <span>heidi<span class="brand-dot">·</span>control plane</span>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <p class="nav-label">Workspace</p>
+        <a class="nav-item active" href="#overview" data-view="overview"><span class="nav-icon">⌂</span>Portfolio</a>
+        <a class="nav-item" href="#launches" data-view="launches"><span class="nav-icon">↗</span>Deployments <b>7</b></a>
+        <a class="nav-item" href="#adoption" data-view="adoption"><span class="nav-icon">◉</span>Readiness</a>
+        <a class="nav-item" href="#training" data-view="training"><span class="nav-icon">◇</span>Capacity</a>
+        <a class="nav-item" href="#insights" data-view="insights"><span class="nav-icon">✦</span>Decisions <em>3</em></a>
+        <p class="nav-label second">Tools</p>
+        <a class="nav-item" href="#playbooks"><span class="nav-icon">▤</span>Methodology</a>
+        <a class="nav-item" href="#feedback"><span class="nav-icon">◌</span>Escalations</a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <div class="capacity">
+          <div><span>Engineering capacity</span><strong>86%</strong></div>
+          <div class="meter"><i></i></div>
+          <small>14% unallocated this sprint</small>
+        </div>
+        <div class="profile">
+          <div class="avatar">MB</div>
+          <div><strong>Megan Blechl</strong><span>Head of Implementation</span></div>
+          <button aria-label="Profile menu">•••</button>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <header class="topbar">
+        <button class="mobile-menu" aria-label="Open menu">☰</button>
+        <div class="breadcrumb"><span>Programs</span><b>/</b>Delivery control plane</div>
+        <div class="top-actions">
+          <button class="icon-button" aria-label="Search">⌕</button>
+          <button class="icon-button notification" aria-label="Notifications">♢<i></i></button>
+          <button class="primary-button" id="execBriefBtn"><span>✦</span> Generate steering brief</button>
+        </div>
+      </header>
+
+      <section class="content" id="overview">
+        <div class="welcome-row">
+          <div>
+            <p class="eyebrow">GLOBAL ENTERPRISE DELIVERY · 11 AUGUST</p>
+            <h1>The deployment system, in one view.</h1>
+            <p>Seven health systems. Two readiness risks. One resourcing decision before it becomes a customer problem.</p>
+          </div>
+          <div class="week-pill"><span>Stage gates passed</span><strong>31 <small>/ 36</small></strong></div>
+        </div>
+
+        <section class="metric-grid" aria-label="Portfolio metrics">
+          <article class="metric-card">
+            <div class="metric-top"><span>Active deployments</span><span class="metric-icon lavender">♙</span></div>
+            <div class="metric-value">7</div>
+            <div class="metric-foot"><span class="trend up">5 regions</span> 23 sites in scope</div>
+          </article>
+          <article class="metric-card">
+            <div class="metric-top"><span>Milestones on time</span><span class="metric-icon green">✓</span></div>
+            <div class="metric-value">91%</div>
+            <div class="metric-foot"><span class="trend up">↗ 4 pts</span> comparable deployments</div>
+          </article>
+          <article class="metric-card">
+            <div class="metric-top"><span>Median technical onboarding</span><span class="metric-icon blue">◫</span></div>
+            <div class="metric-value">38d</div>
+            <div class="metric-foot"><span class="trend up">↓ 9 days</span> vs prior quarter</div>
+          </article>
+          <article class="metric-card attention">
+            <div class="metric-top"><span>Readiness risks</span><span class="metric-icon coral">!</span></div>
+            <div class="metric-value">2</div>
+            <div class="metric-foot"><span class="trend down">1 capacity</span> decision due today</div>
+          </article>
+        </section>
+
+        <div class="main-grid">
+          <section class="panel launches-panel">
+            <div class="panel-head">
+              <div><h2>Technical deployment portfolio</h2><p>Stage-gate progress from signed contract to stable handover</p></div>
+              <div class="filter-group" role="group" aria-label="Filter launches">
+                <button class="filter active" data-filter="all">All</button>
+                <button class="filter" data-filter="risk">Readiness risk</button>
+              </div>
+            </div>
+            <div class="launch-table">
+              <div class="table-head"><span>Health system</span><span>Stage gate</span><span>Readiness</span><span>Critical dependency</span><span></span></div>
+              <button class="launch-row" data-risk="false" data-client="Rivergum Health">
+                <span class="customer"><i class="logo rg">R</i><span><strong>Rivergum Health</strong><small>5 sites · Epic · AU</small></span></span>
+                <span><b class="status live">Stabilise</b><small>Gate 6 of 7</small></span>
+                <span class="activation"><strong>94%</strong><i><b style="width:94%"></b></i></span>
+                <span><strong>Production sign-off</strong><small>14 Aug · CMIO owner</small></span>
+                <span class="chevron">›</span>
+              </button>
+              <button class="launch-row risk-row" data-risk="true" data-client="Northstar NHS Trust">
+                <span class="customer"><i class="logo nc">N</i><span><strong>Northstar NHS Trust</strong><small>3 sites · Cerner · UK</small></span></span>
+                <span><b class="status risk">Blocked</b><small>Gate 2 of 7</small></span>
+                <span class="activation"><strong>58%</strong><i><b style="width:58%"></b></i></span>
+                <span><strong>SAML attribute map</strong><small class="overdue">Today · IT owner missing</small></span>
+                <span class="chevron">›</span>
+              </button>
+              <button class="launch-row" data-risk="false" data-client="Coastal Care Network">
+                <span class="customer"><i class="logo cc">C</i><span><strong>Coastal Care Network</strong><small>8 sites · Epic · US</small></span></span>
+                <span><b class="status training">Integrate</b><small>Gate 4 of 7</small></span>
+                <span class="activation"><strong>82%</strong><i><b style="width:82%"></b></i></span>
+                <span><strong>HL7 validation</strong><small>16 Aug · Integration team</small></span>
+                <span class="chevron">›</span>
+              </button>
+              <button class="launch-row" data-risk="false" data-client="Brightwell Medical">
+                <span class="customer"><i class="logo bm">B</i><span><strong>Brightwell Medical</strong><small>7 sites · MedDirector · AU</small></span></span>
+                <span><b class="status setup">Scope</b><small>Gate 1 of 7</small></span>
+                <span class="activation"><strong>71%</strong><i><b style="width:71%"></b></i></span>
+                <span><strong>Environment sign-off</strong><small>13 Aug · Security owner</small></span>
+                <span class="chevron">›</span>
+              </button>
+            </div>
+            <button class="text-button">View all 7 deployments <span>→</span></button>
+          </section>
+
+          <aside class="panel focus-panel">
+            <div class="panel-head"><div><h2>Decisions, not updates</h2><p>Prioritised by deployment impact</p></div><span class="count">3</span></div>
+            <div class="focus-list">
+              <article class="focus-item urgent">
+                <div class="focus-time">9:30<small>AM</small></div>
+                <div><span class="mini-label">UNBLOCK · NORTHSTAR</span><strong>Assign identity owner</strong><p>SAML mapping has no Trust owner. Cutover buffer reaches zero in 48 hours.</p><button data-action="plan">Open escalation →</button></div>
+              </article>
+              <article class="focus-item">
+                <div class="focus-time">1:00<small>PM</small></div>
+                <div><span class="mini-label">DECIDE · COASTAL CARE</span><strong>Configure, don’t build</strong><p>ADT feed variance matches an existing interface mapping pattern.</p><button data-action="brief">Review evidence →</button></div>
+              </article>
+              <article class="focus-item">
+                <div class="focus-time">3:30<small>PM</small></div>
+                <div><span class="mini-label">ALLOCATE · GLOBAL</span><strong>Resolve integration collision</strong><p>Two cutovers need the same engineer. Sequence before steering.</p><button data-action="brief">Make resourcing call →</button></div>
+              </article>
+            </div>
+          </aside>
+        </div>
+
+        <div class="lower-grid">
+          <section class="panel adoption-panel">
+            <div class="panel-head"><div><h2>Milestone attainment</h2><p>Technical stage gates passed on time vs target</p></div><div class="legend"><span><i class="actual"></i>Actual</span><span><i class="target"></i>Target</span></div></div>
+            <div class="chart-wrap">
+              <div class="y-axis"><span>80%</span><span>60%</span><span>40%</span><span>20%</span><span>0%</span></div>
+              <svg viewBox="0 0 700 210" role="img" aria-label="Activation rising from 12 to 68 percent over seven weeks">
+                <defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6257e7" stop-opacity=".22"/><stop offset="1" stop-color="#6257e7" stop-opacity="0"/></linearGradient></defs>
+                <g class="grid-lines"><line x1="0" y1="15" x2="700" y2="15"/><line x1="0" y1="62" x2="700" y2="62"/><line x1="0" y1="109" x2="700" y2="109"/><line x1="0" y1="156" x2="700" y2="156"/><line x1="0" y1="203" x2="700" y2="203"/></g>
+                <path class="area" d="M0 175 C55 166 60 154 115 147 S180 119 230 118 S300 91 350 89 S420 67 465 64 S535 49 580 44 S645 39 700 35 L700 203 L0 203Z"/>
+                <path class="target-line" d="M0 180 L115 156 L230 132 L350 108 L465 85 L580 61 L700 38"/>
+                <path class="actual-line" d="M0 175 C55 166 60 154 115 147 S180 119 230 118 S300 91 350 89 S420 67 465 64 S535 49 580 44 S645 39 700 35"/>
+                <g class="dots"><circle cx="0" cy="175"/><circle cx="115" cy="147"/><circle cx="230" cy="118"/><circle cx="350" cy="89"/><circle cx="465" cy="64"/><circle cx="580" cy="44"/><circle cx="700" cy="35"/></g>
+              </svg>
+              <div class="x-axis"><span>W1</span><span>W2</span><span>W3</span><span>W4</span><span>W5</span><span>W6</span><span>W7</span></div>
+            </div>
+          </section>
+
+          <section class="panel insight-panel">
+            <div class="insight-kicker"><span>✦</span> SIGNAL OF THE WEEK</div>
+            <h2>This is configuration,<br>not a product gap.</h2>
+            <p>Coastal Care’s ADT variance matches an existing interface pattern. Keep it out of the roadmap and protect <strong>8 engineering days.</strong></p>
+            <div class="compare-bars">
+              <div><span>Configure</span><i><b style="width:86%"></b></i><strong>4d</strong></div>
+              <div><span>New build</span><i><b style="width:37%"></b></i><strong>12d</strong></div>
+            </div>
+            <button id="applyInsight">Record scope decision <span>→</span></button>
+          </section>
+        </div>
+
+        <footer><span>Independent concept by Megan Blechl for Heidi</span><span>Build the machine while delivering.</span></footer>
+      </section>
+    </main>
+  </div>
+
+  <div class="toast" role="status" aria-live="polite"><span>✓</span><div><strong>Decision recorded</strong><small>Configuration path approved; 8 engineering days protected.</small></div></div>
+
+  <div class="modal-backdrop" id="modal" aria-hidden="true">
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" aria-label="Close">×</button>
+      <div class="modal-icon">✦</div>
+      <p class="eyebrow">STEERING BRIEF · 11 AUGUST</p>
+      <h2 id="modalTitle">Portfolio is controlled.<br>One owner decision required.</h2>
+      <div class="brief-stat"><div><span>On-time gates</span><strong>91%</strong></div><div><span>Deployments</span><strong>7</strong></div><div><span>Risks</span><strong class="red">2</strong></div></div>
+      <div class="brief-section"><strong>Decision needed</strong><p>Northstar CIO to assign an identity owner today. Without an approved SAML attribute map by Thursday, cutover moves one week to protect production stability.</p></div>
+      <div class="brief-section"><strong>Scope boundary</strong><p>Coastal Care’s ADT request is configuration, not a product gap. Existing mapping closes it in four days without roadmap impact.</p></div>
+      <div class="modal-actions"><button class="secondary modal-close-action">Close</button><button class="primary-button copy-brief">Copy brief</button></div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
