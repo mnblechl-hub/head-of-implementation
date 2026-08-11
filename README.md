@@ -29,6 +29,10 @@ The site includes six interactive field guides for building practical implementa
 
 Each guide contains deployment checklists, stage-gate evidence, common failure modes, practice scenarios and official technical references. Completion progress is stored locally in the browser.
 
+## Seven-gate methodology
+
+The Methodology section defines the controlled deployment path: Scope Confirmed, Environment Ready, Solution Configured, Integration Validated, Go-Live Ready, Stabilised and Handover Accepted. Every gate requires a named owner, objective exit criteria, evidence, recorded exceptions and a decision date.
+
 ## Run it
 
 Open `index.html` in a browser. No build step or dependencies are required. Internet access is only used to load the two Google Fonts; the app otherwise runs locally.
