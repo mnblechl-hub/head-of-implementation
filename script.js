@@ -145,3 +145,76 @@ document.getElementById('completeGuide').addEventListener('click', event => {
 });
 document.addEventListener('keydown', event => { if (event.key === 'Escape' && guideModal.classList.contains('open')) document.querySelector('.guide-close').click(); });
 updateGuideProgress();
+
+// Capacity scenario planner
+document.querySelectorAll('[data-scenario]').forEach(button => button.addEventListener('click', () => {
+  document.getElementById('collisionCard').hidden = true;
+  document.getElementById('capacityDecision').hidden = false;
+  document.getElementById('conflictCount').textContent = '0';
+  document.querySelectorAll('.load.conflict').forEach((cell, index) => {
+    cell.classList.remove('conflict'); cell.classList.add(index ? 'high' : 'medium'); cell.textContent = index ? '90%' : '80%';
+  });
+  localStorage.setItem('capacityScenarioResolved', 'true');
+}));
+
+document.getElementById('resetScenario').addEventListener('click', () => {
+  localStorage.removeItem('capacityScenarioResolved');
+  location.reload();
+});
+
+if (localStorage.getItem('capacityScenarioResolved') === 'true') {
+  document.querySelector('[data-scenario="move"]').click();
+}
+
+// Delivery toolkit tabs
+document.querySelectorAll('.tool-tab').forEach(tab => tab.addEventListener('click', () => {
+  document.querySelectorAll('.tool-tab').forEach(item => item.classList.remove('active'));
+  document.querySelectorAll('.tool-panel').forEach(panel => panel.classList.remove('active'));
+  tab.classList.add('active');
+  document.querySelector(`[data-panel="${tab.dataset.tool}"]`).classList.add('active');
+}));
+
+// Persist operational checklist progress
+const savedChecks = document.querySelectorAll('.saved-check');
+savedChecks.forEach((check, index) => {
+  const key = `deliveryCheck-${index}`;
+  const saved = localStorage.getItem(key);
+  if (saved !== null) check.checked = saved === 'true';
+  check.addEventListener('change', () => {
+    localStorage.setItem(key, String(check.checked));
+    updateOperationalScores();
+  });
+});
+
+function updateOperationalScores() {
+  const onprem = [...document.querySelectorAll('.onprem-check')];
+  const onpremDone = onprem.filter(item => item.checked).length;
+  document.getElementById('onpremScore').textContent = `${onpremDone} / ${onprem.length}`;
+
+  const ramp = [...document.querySelectorAll('.ramp-check')];
+  const rampDone = ramp.filter(item => item.checked).length;
+  document.getElementById('rampScore').textContent = `${Math.round(rampDone / ramp.length * 100)}%`;
+
+  const presales = [...document.querySelectorAll('.presales-check')];
+  const presalesDone = presales.filter(item => item.checked).length;
+  document.getElementById('presalesCount').textContent = `${presalesDone} / ${presales.length}`;
+  const verdict = document.getElementById('presalesVerdict');
+  const remaining = presales.length - presalesDone;
+  verdict.classList.toggle('hold', remaining > 0);
+  verdict.classList.toggle('go', remaining === 0);
+  verdict.querySelector('strong').textContent = remaining ? 'HOLD' : 'READY';
+  verdict.querySelector('span').textContent = remaining ? `${remaining} item${remaining === 1 ? '' : 's'} unresolved` : 'contract gate passed';
+}
+updateOperationalScores();
+
+// Artifact generation feedback
+const artifactToast = document.createElement('div');
+artifactToast.className = 'artifact-toast';
+artifactToast.setAttribute('role', 'status');
+document.body.appendChild(artifactToast);
+const artifactNames = { deployment:'Deployment plan', steering:'Executive steering pack', dependencies:'IT dependency log', presales:'Pre-signature readiness summary' };
+document.querySelectorAll('[data-artifact]').forEach(button => button.addEventListener('click', () => {
+  artifactToast.textContent = `✓ ${artifactNames[button.dataset.artifact]} generated from current workspace`;
+  artifactToast.classList.add('show');
+  setTimeout(() => artifactToast.classList.remove('show'), 3200);
+}));

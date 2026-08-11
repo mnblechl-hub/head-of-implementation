@@ -23,12 +23,12 @@
         <a class="nav-item active" href="#overview" data-view="overview"><span class="nav-icon">⌂</span>Portfolio</a>
         <a class="nav-item" href="#launches" data-view="launches"><span class="nav-icon">↗</span>Deployments <b>7</b></a>
         <a class="nav-item" href="#adoption" data-view="adoption"><span class="nav-icon">◉</span>Readiness</a>
-        <a class="nav-item" href="#training" data-view="training"><span class="nav-icon">◇</span>Capacity</a>
+        <a class="nav-item" href="#capacity" data-view="capacity"><span class="nav-icon">◇</span>Capacity</a>
         <a class="nav-item" href="#insights" data-view="insights"><span class="nav-icon">✦</span>Decisions <em>3</em></a>
         <p class="nav-label second">Tools</p>
         <a class="nav-item" href="#learning"><span class="nav-icon">◆</span>Learning Hub <em>6</em></a>
         <a class="nav-item" href="#playbooks"><span class="nav-icon">▤</span>Methodology</a>
-        <a class="nav-item" href="#feedback"><span class="nav-icon">◌</span>Escalations</a>
+        <a class="nav-item" href="#delivery-tools"><span class="nav-icon">◌</span>Delivery tools <em>4</em></a>
       </nav>
 
       <div class="sidebar-bottom">
@@ -180,6 +180,25 @@
           </section>
         </div>
 
+        <section class="capacity-tool" id="capacity">
+          <div class="tool-head">
+            <div><p class="eyebrow">CAPACITY SCENARIO PLANNER</p><h2>Make the resourcing call before customers feel it.</h2><p>Forecast critical skills across the next six weeks and resolve collisions against deployment milestones.</p></div>
+            <div class="capacity-summary"><span><b>86%</b> allocated</span><span class="risk-summary"><b id="conflictCount">1</b> conflict</span><span><b>14%</b> buffer</span></div>
+          </div>
+          <div class="capacity-grid-wrap">
+            <div class="capacity-grid capacity-grid-head"><span>Resource / skill</span><span>W1</span><span>W2</span><span>W3</span><span>W4</span><span>W5</span><span>W6</span></div>
+            <div class="capacity-grid"><span class="resource-person"><i class="person-a">AK</i><span><strong>Alex Kim</strong><small>Epic · HL7</small></span></span><span class="load medium">65%</span><span class="load high">90%</span><span class="load conflict">125%</span><span class="load conflict">115%</span><span class="load high">85%</span><span class="load medium">70%</span></div>
+            <div class="capacity-grid"><span class="resource-person"><i class="person-b">SR</i><span><strong>Sam Rivera</strong><small>Cerner · FHIR</small></span></span><span class="load medium">70%</span><span class="load medium">75%</span><span class="load high">85%</span><span class="load high">90%</span><span class="load medium">75%</span><span class="load medium">60%</span></div>
+            <div class="capacity-grid"><span class="resource-person"><i class="person-c">JT</i><span><strong>Jordan Taylor</strong><small>Identity · Entra</small></span></span><span class="load high">80%</span><span class="load high">85%</span><span class="load high">90%</span><span class="load medium">75%</span><span class="load medium">65%</span><span class="load low">45%</span></div>
+            <div class="capacity-grid"><span class="resource-person"><i class="person-d">PM</i><span><strong>Priya Mehta</strong><small>Implementation lead</small></span></span><span class="load medium">75%</span><span class="load high">85%</span><span class="load high">95%</span><span class="load high">90%</span><span class="load high">85%</span><span class="load medium">70%</span></div>
+          </div>
+          <div class="collision-card" id="collisionCard">
+            <div class="collision-alert">!</div><div><span class="mini-label">WEEK 3–4 · EPIC INTEGRATION</span><strong>Poppy Health and Iris Health require Alex at the same time.</strong><p>Both integration-validation windows currently consume 125% of available capacity.</p></div>
+            <div class="scenario-options"><button data-scenario="move">Move Iris validation +5d <small>Lowest risk</small></button><button data-scenario="reassign">Reassign Poppy to Sam <small>Skills gap</small></button><button data-scenario="contract">Add specialist capacity <small>+$8.4k</small></button></div>
+          </div>
+          <div class="decision-banner" id="capacityDecision" hidden><span>✓</span><div><strong>Resourcing decision recorded</strong><p>Iris Health validation moved five days. Both cutovers retain full engineering coverage; customer milestone remains on time.</p></div><button id="resetScenario">Reset</button></div>
+        </section>
+
         <section class="learning-section" id="learning">
           <div class="learning-header">
             <div>
@@ -283,6 +302,44 @@
           <div class="methodology-foot">
             <div><span>Every gate has</span><strong>A named owner</strong><strong>Objective criteria</strong><strong>Evidence</strong><strong>Exceptions</strong><strong>A decision date</strong></div>
             <p><b>Current control:</b> Daisy Health is held at Gate 2 until an identity owner and approved SAML attribute map are evidenced.</p>
+          </div>
+        </section>
+
+        <section class="delivery-toolkit" id="delivery-tools">
+          <div class="tool-head">
+            <div><p class="eyebrow">SIX-WEEK EXECUTION TOOLKIT</p><h2>From signed deal to a team that can deliver.</h2><p>Four reusable workspaces turn the remaining role outcomes into controlled, repeatable execution.</p></div>
+            <div class="tool-tabs" role="tablist"><button class="tool-tab active" data-tool="onprem">On-prem scope</button><button class="tool-tab" data-tool="kickoff">Kickoff centre</button><button class="tool-tab" data-tool="ramp">Team ramp</button><button class="tool-tab" data-tool="presales">Pre-signature</button></div>
+          </div>
+
+          <div class="tool-panel active" data-panel="onprem">
+            <div class="workspace-title"><div><span class="workspace-badge">DAISY HEALTH · ON-PREM</span><h3>Environment scope & sign-off plan</h3><p>Confirm requirements before committing integration engineering.</p></div><div class="workspace-score"><strong id="onpremScore">3 / 8</strong><span>requirements confirmed</span></div></div>
+            <div class="workspace-grid">
+              <div class="checklist-card"><h4>Readiness requirements</h4><label><input type="checkbox" class="saved-check onprem-check" checked> Architecture and data flows documented <span>Security</span></label><label><input type="checkbox" class="saved-check onprem-check" checked> Hosting and data residency agreed <span>Privacy</span></label><label><input type="checkbox" class="saved-check onprem-check" checked> Identity pattern and owners confirmed <span>IT</span></label><label><input type="checkbox" class="saved-check onprem-check"> Proxy, firewall and DNS requirements <span>Infrastructure</span></label><label><input type="checkbox" class="saved-check onprem-check"> Non-production environment available <span>IT</span></label><label><input type="checkbox" class="saved-check onprem-check"> Procurement security schedule accepted <span>Procurement</span></label><label><input type="checkbox" class="saved-check onprem-check"> Clinical governance pathway agreed <span>CMIO</span></label><label><input type="checkbox" class="saved-check onprem-check"> Production change window reserved <span>CAB</span></label></div>
+              <div class="timeline-card"><h4>Sign-off timeline</h4><div class="timeline-row done"><i></i><span><strong>Architecture review</strong><small>12 Aug · Solution architect</small></span><b>Done</b></div><div class="timeline-row"><i></i><span><strong>Security & privacy decision</strong><small>16 Aug · CISO / Privacy</small></span><b>4d</b></div><div class="timeline-row"><i></i><span><strong>Infrastructure readiness</strong><small>21 Aug · Trust IT</small></span><b>9d</b></div><div class="timeline-row locked"><i></i><span><strong>Engineering commitment</strong><small>Only after readiness sign-off</small></span><b>Held</b></div><button class="generate-artifact" data-artifact="deployment">Generate deployment plan</button></div>
+            </div>
+          </div>
+
+          <div class="tool-panel" data-panel="kickoff">
+            <div class="workspace-title"><div><span class="workspace-badge">POPPY HEALTH · 5 SITES</span><h3>One kickoff. Two altitudes.</h3><p>Executive decisions in the morning; technical dependencies in the afternoon.</p></div><div class="workspace-score"><strong>18 Aug</strong><span>kickoff date</span></div></div>
+            <div class="agenda-grid">
+              <article class="agenda-card"><header><span>09:00–10:00</span><b>EXECUTIVE STEERING</b></header><h4>Decide outcomes and governance</h4><ol><li>Value outcomes and success measures <b>10m</b></li><li>Five-site rollout scope and sequence <b>15m</b></li><li>Governance and decision rights <b>15m</b></li><li>Top risks and decisions required <b>10m</b></li><li>Actions and next steering date <b>10m</b></li></ol><button class="generate-artifact" data-artifact="steering">Generate steering pack</button></article>
+              <article class="agenda-card technical"><header><span>13:00–14:30</span><b>IT DEPENDENCY REVIEW</b></header><h4>Prove the critical path</h4><ol><li>Environment and network topology <b>20m</b></li><li>SSO, claims and provisioning <b>15m</b></li><li>Epic interface and test data <b>25m</b></li><li>Security and change approvals <b>15m</b></li><li>Owners, dates and gate evidence <b>15m</b></li></ol><button class="generate-artifact" data-artifact="dependencies">Generate dependency log</button></article>
+              <aside class="site-sequence"><h4>Site rollout sequence</h4><div><span>1</span><p><strong>Central Hospital</strong><small>Pilot · 1 Sep</small></p></div><div><span>2</span><p><strong>North Clinic</strong><small>Wave 2 · 8 Sep</small></p></div><div><span>3</span><p><strong>East Clinic</strong><small>Wave 2 · 8 Sep</small></p></div><div><span>4</span><p><strong>West Hospital</strong><small>Wave 3 · 15 Sep</small></p></div><div><span>5</span><p><strong>Community Care</strong><small>Wave 3 · 15 Sep</small></p></div></aside>
+            </div>
+          </div>
+
+          <div class="tool-panel" data-panel="ramp">
+            <div class="workspace-title"><div><span class="workspace-badge">NEW HIRE · IMPLEMENTATION MANAGER</span><h3>Independent account leadership in three weeks.</h3><p>A readiness-based ramp—not passive onboarding.</p></div><div class="workspace-score"><strong id="rampScore">33%</strong><span>ramp complete</span></div></div>
+            <div class="ramp-grid">
+              <article><header><span>WEEK 1</span><b>Learn & observe</b></header><label><input type="checkbox" class="saved-check ramp-check" checked> Product workflow certification</label><label><input type="checkbox" class="saved-check ramp-check" checked> Seven-gate methodology lab</label><label><input type="checkbox" class="saved-check ramp-check" checked> Shadow customer dependency review</label><div class="week-gate">Exit: explain a deployment end to end</div></article>
+              <article><header><span>WEEK 2</span><b>Lead with support</b></header><label><input type="checkbox" class="saved-check ramp-check"> Run internal account review</label><label><input type="checkbox" class="saved-check ramp-check"> Lead customer status meeting</label><label><input type="checkbox" class="saved-check ramp-check"> Produce first steering brief</label><div class="week-gate">Exit: manager observes and signs off</div></article>
+              <article><header><span>WEEK 3</span><b>Own the account</b></header><label><input type="checkbox" class="saved-check ramp-check"> Own plan, risks and decisions</label><label><input type="checkbox" class="saved-check ramp-check"> Run technical dependency review</label><label><input type="checkbox" class="saved-check ramp-check"> Pass account-readiness review</label><div class="week-gate">Exit: independent caseload approved</div></article>
+            </div>
+          </div>
+
+          <div class="tool-panel" data-panel="presales">
+            <div class="workspace-title"><div><span class="workspace-badge">SALES × SOLUTIONS × IMPLEMENTATION</span><h3>Pre-signature technical readiness gate</h3><p>Expose material unknowns before they become contracted go-live blockers.</p></div><div class="readiness-verdict hold" id="presalesVerdict"><strong>HOLD</strong><span>5 items unresolved</span></div></div>
+            <div class="presales-layout"><div class="presales-checks"><label><input type="checkbox" class="saved-check presales-check" checked><span><strong>Health-system scope</strong><small>Sites, clinicians, specialties and rollout waves</small></span><b>Sales</b></label><label><input type="checkbox" class="saved-check presales-check" checked><span><strong>EHR environment</strong><small>Product, version, hosting and integration pattern</small></span><b>Solutions</b></label><label><input type="checkbox" class="saved-check presales-check" checked><span><strong>Identity requirements</strong><small>IdP, SSO protocol, provisioning and owners</small></span><b>Solutions</b></label><label><input type="checkbox" class="saved-check presales-check"><span><strong>Network and on-prem constraints</strong><small>Proxy, firewall, device and environment requirements</small></span><b>Customer IT</b></label><label><input type="checkbox" class="saved-check presales-check"><span><strong>Security and clinical governance</strong><small>Review pathways, evidence and decision lead times</small></span><b>Customer</b></label><label><input type="checkbox" class="saved-check presales-check"><span><strong>Engineering estimate</strong><small>Confirmed configuration versus new work</small></span><b>Engineering</b></label><label><input type="checkbox" class="saved-check presales-check"><span><strong>Procurement timeline</strong><small>Legal, security schedules and dependencies</small></span><b>Sales</b></label><label><input type="checkbox" class="saved-check presales-check"><span><strong>Responsible go-live date</strong><small>Derived from evidence and lead times</small></span><b>Implementation</b></label></div><aside class="signature-panel"><h4>Contract gate</h4><p>All material unknowns must be either confirmed or recorded as an accepted assumption with an owner and decision date.</p><div><span>Confirmed</span><strong id="presalesCount">3 / 8</strong></div><button class="generate-artifact" data-artifact="presales">Generate readiness summary</button></aside></div>
           </div>
         </section>
 

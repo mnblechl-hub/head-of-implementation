@@ -33,6 +33,14 @@ Each guide contains deployment checklists, stage-gate evidence, common failure m
 
 The Methodology section defines the controlled deployment path: Scope Confirmed, Environment Ready, Solution Configured, Integration Validated, Go-Live Ready, Stabilised and Handover Accepted. Every gate requires a named owner, objective exit criteria, evidence, recorded exceptions and a decision date.
 
+## Operational tools
+
+- **Capacity scenario planner:** exposes a shared Epic-engineer collision, compares resourcing options and records the decision.
+- **On-prem scope workspace:** controls security, infrastructure, procurement and clinical-governance readiness before engineering commitment.
+- **Five-site kickoff centre:** generates separate executive-steering and IT-dependency agendas with a sequenced rollout.
+- **Implementation Manager ramp:** tracks readiness-based progression to independent account leadership within three weeks.
+- **Pre-signature gate:** gives Sales, Solutions Engineering and Implementation one checklist and a live hold/ready decision.
+
 ## Run it
 
 Open `index.html` in a browser. No build step or dependencies are required. Internet access is only used to load the two Google Fonts; the app otherwise runs locally.
