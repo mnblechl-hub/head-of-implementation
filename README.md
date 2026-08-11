@@ -36,9 +36,9 @@ Open `index.html` in a browser. No build step or dependencies are required. Inte
 ## Demo flow (90 seconds)
 
 1. Start with the four global portfolio metrics: volume, stage-gate attainment, onboarding time and readiness risk.
-2. Filter the portfolio to **Readiness risk** and open Northstar. Explain that SAML work is blocked by customer ownership—not engineering—and that the cutover consequence is already explicit.
+2. Filter the portfolio to **Readiness risk** and open Daisy Health. Explain that SAML work is blocked by customer ownership—not engineering—and that the cutover consequence is already explicit.
 3. Show the capacity collision in **Decisions, not updates**: the system exposes a shared integration-engineer conflict before either customer feels it.
-4. Use **Signal of the week** to classify Coastal Care’s ADT variance as configuration rather than a product gap, then record the decision.
+4. Use **Signal of the week** to classify Iris Health’s ADT variance as configuration rather than a product gap, then record the decision.
 5. Generate the steering brief. It carries the same facts upward at CIO altitude with one named decision and a deadline.
 
 ## Design notes

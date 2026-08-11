@@ -38,7 +38,7 @@ modal.addEventListener('click', event => { if (event.target === modal) closeModa
 document.addEventListener('keydown', event => { if (event.key === 'Escape') closeModal(); });
 
 document.querySelector('.copy-brief').addEventListener('click', async () => {
-  const text = 'Steering brief: 91% of technical stage gates are on time across seven deployments. Decision: Northstar CIO to assign an identity owner today or move cutover one week.';
+  const text = 'Steering brief: 91% of technical stage gates are on time across seven deployments. Decision: Daisy Health’s CIO to assign an identity owner today or move cutover one week.';
   try { await navigator.clipboard.writeText(text); } catch (_) {}
   closeModal();
   toast.querySelector('strong').textContent = 'Steering brief copied';
