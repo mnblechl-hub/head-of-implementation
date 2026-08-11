@@ -1,6 +1,6 @@
 # Project Control
 
-An enterprise technical-deployment control plane created for Heidi’s senior implementation leadership role.
+An enterprise technical-deployment control plane created for a Head of Implementation application.
 
 ## Why this concept
 
@@ -31,5 +31,5 @@ Open `index.html` in a browser. No build step or dependencies are required. Inte
 ## Design notes
 
 - The organisations, people, metrics, and deployment data shown are fictional.
-- This is an independent application concept and is not an official Heidi product.
+- This is an independent application concept built with fictional deployment data.
 - The methodology is intentionally opinionated: no gate passes without evidence, every dependency has an owner, and stabilisation is complete before CS handover.
