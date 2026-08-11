@@ -26,6 +26,7 @@
         <a class="nav-item" href="#training" data-view="training"><span class="nav-icon">◇</span>Capacity</a>
         <a class="nav-item" href="#insights" data-view="insights"><span class="nav-icon">✦</span>Decisions <em>3</em></a>
         <p class="nav-label second">Tools</p>
+        <a class="nav-item" href="#learning"><span class="nav-icon">◆</span>Learning Hub <em>6</em></a>
         <a class="nav-item" href="#playbooks"><span class="nav-icon">▤</span>Methodology</a>
         <a class="nav-item" href="#feedback"><span class="nav-icon">◌</span>Escalations</a>
       </nav>
@@ -179,6 +180,65 @@
           </section>
         </div>
 
+        <section class="learning-section" id="learning">
+          <div class="learning-header">
+            <div>
+              <p class="eyebrow">IMPLEMENTATION FIELD MANUAL</p>
+              <h2>Build technical fluency.<br>Deploy with confidence.</h2>
+              <p>Practical guides for leading complex health-system deployments—from discovery questions to evidence-based sign-off.</p>
+            </div>
+            <div class="learning-progress">
+              <div class="progress-ring"><strong id="progressCount">0</strong><span>/ 6</span></div>
+              <div><strong>Guides completed</strong><small>Progress is saved on this device</small></div>
+            </div>
+          </div>
+
+          <div class="guide-grid">
+            <button class="guide-card" data-guide="sso">
+              <span class="guide-number">01</span><span class="guide-level">CORE · 35 MIN</span>
+              <i class="guide-icon purple-guide">ID</i>
+              <h3>SSO & SAML readiness</h3>
+              <p>Lead identity discovery, map the trust exchange, validate claims and prevent certificate surprises.</p>
+              <span class="guide-outcome">Outcome: signed identity checklist <b>→</b></span>
+            </button>
+            <button class="guide-card" data-guide="ehr">
+              <span class="guide-number">02</span><span class="guide-level">CORE · 45 MIN</span>
+              <i class="guide-icon blue-guide">EHR</i>
+              <h3>EHR integration patterns</h3>
+              <p>Know when to use embedded launch, FHIR APIs, HL7 feeds, write-back or a lightweight workflow.</p>
+              <span class="guide-outcome">Outcome: integration context diagram <b>→</b></span>
+            </button>
+            <button class="guide-card" data-guide="hl7">
+              <span class="guide-number">03</span><span class="guide-level">TECHNICAL · 45 MIN</span>
+              <i class="guide-icon green-guide">{ }</i>
+              <h3>HL7 & FHIR essentials</h3>
+              <p>Read the nouns, flows and failure modes well enough to run a dependency review without bluffing.</p>
+              <span class="guide-outcome">Outcome: interface validation plan <b>→</b></span>
+            </button>
+            <button class="guide-card" data-guide="security">
+              <span class="guide-number">04</span><span class="guide-level">GOVERNANCE · 30 MIN</span>
+              <i class="guide-icon coral-guide">✓</i>
+              <h3>Security & environment readiness</h3>
+              <p>Turn security, privacy, hosting and network questions into owned evidence before engineering starts.</p>
+              <span class="guide-outcome">Outcome: readiness gate pack <b>→</b></span>
+            </button>
+            <button class="guide-card" data-guide="cutover">
+              <span class="guide-number">05</span><span class="guide-level">DELIVERY · 35 MIN</span>
+              <i class="guide-icon amber-guide">GO</i>
+              <h3>Cutover & stabilisation</h3>
+              <p>Build a reversible go-live, run command-centre governance and hand over only when stable.</p>
+              <span class="guide-outcome">Outcome: go/no-go runbook <b>→</b></span>
+            </button>
+            <button class="guide-card" data-guide="scope">
+              <span class="guide-number">06</span><span class="guide-level">JUDGMENT · 25 MIN</span>
+              <i class="guide-icon lime-guide">?</i>
+              <h3>Build vs configure</h3>
+              <p>Separate product gaps from configuration and deployment issues with a repeatable evidence test.</p>
+              <span class="guide-outcome">Outcome: scope decision record <b>→</b></span>
+            </button>
+          </div>
+        </section>
+
         <footer><span>Independent concept by Megan Blechl</span><span>Build the machine while delivering.</span></footer>
       </section>
     </main>
@@ -197,6 +257,23 @@
       <div class="brief-section"><strong>Scope boundary</strong><p>Coastal Care’s ADT request is configuration, not a product gap. Existing mapping closes it in four days without roadmap impact.</p></div>
       <div class="modal-actions"><button class="secondary modal-close-action">Close</button><button class="primary-button copy-brief">Copy brief</button></div>
     </section>
+  </div>
+
+  <div class="guide-backdrop" id="guideModal" aria-hidden="true">
+    <article class="guide-drawer" role="dialog" aria-modal="true" aria-labelledby="guideTitle">
+      <header class="guide-drawer-head">
+        <div><p class="eyebrow" id="guideKicker">FIELD GUIDE</p><h2 id="guideTitle">Guide title</h2><p id="guideIntro"></p></div>
+        <button class="guide-close" aria-label="Close guide">×</button>
+      </header>
+      <div class="guide-body">
+        <aside class="guide-nav" id="guideNav"></aside>
+        <div class="guide-content" id="guideContent"></div>
+      </div>
+      <footer class="guide-footer">
+        <span>Use this guide to lead the work—not replace accountable technical specialists.</span>
+        <button id="completeGuide">Mark guide complete</button>
+      </footer>
+    </article>
   </div>
   <script src="script.js"></script>
 </body>

@@ -16,6 +16,19 @@ It demonstrates:
 - CIO/CMIO-level reporting that asks for decisions, not status acknowledgement;
 - metrics for technical onboarding time, milestone attainment and deployment variance.
 
+## Learning Hub
+
+The site includes six interactive field guides for building practical implementation fluency:
+
+1. SSO and SAML readiness
+2. EHR integration patterns
+3. HL7 and FHIR essentials
+4. Security and environment readiness
+5. Cutover and stabilisation
+6. Build-vs-configure judgment
+
+Each guide contains deployment checklists, stage-gate evidence, common failure modes, practice scenarios and official technical references. Completion progress is stored locally in the browser.
+
 ## Run it
 
 Open `index.html` in a browser. No build step or dependencies are required. Internet access is only used to load the two Google Fonts; the app otherwise runs locally.
