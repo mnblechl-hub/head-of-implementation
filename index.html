@@ -1,384 +1,147 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Project Control — technical enterprise deployment infrastructure." />
-  <title>Project Control — Enterprise delivery infrastructure</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Megan Blechl's enterprise implementation operating model for complex health-system deployments.">
+  <title>Megan Blechl — Enterprise Implementation Operating Model</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="app-shell">
-    <aside class="sidebar">
-      <a class="brand" href="#" aria-label="Project Control home">
-        <span class="brand-mark"><i></i><i></i><i></i></span>
-        <span>Project Control</span>
-      </a>
+  <header class="site-header">
+    <a class="brand" href="#top">Megan Blechl</a>
+    <nav aria-label="Main navigation">
+      <a href="#method">Operating model</a>
+      <a href="#case-study">Case study</a>
+      <a href="#decisions">Decisions</a>
+      <a href="#fit">Role fit</a>
+    </nav>
+  </header>
 
-      <nav aria-label="Main navigation">
-        <p class="nav-label">Workspace</p>
-        <a class="nav-item active" href="#overview" data-view="overview"><span class="nav-icon">⌂</span>Portfolio</a>
-        <a class="nav-item" href="#launches" data-view="launches"><span class="nav-icon">↗</span>Deployments <b>7</b></a>
-        <a class="nav-item" href="#adoption" data-view="adoption"><span class="nav-icon">◉</span>Readiness</a>
-        <a class="nav-item" href="#capacity" data-view="capacity"><span class="nav-icon">◇</span>Capacity</a>
-        <a class="nav-item" href="#insights" data-view="insights"><span class="nav-icon">✦</span>Decisions <em>3</em></a>
-        <p class="nav-label second">Tools</p>
-        <a class="nav-item" href="#learning"><span class="nav-icon">◆</span>Learning Hub <em>6</em></a>
-        <a class="nav-item" href="#playbooks"><span class="nav-icon">▤</span>Methodology</a>
-        <a class="nav-item" href="#delivery-tools"><span class="nav-icon">◌</span>Delivery tools <em>4</em></a>
-      </nav>
-
-      <div class="sidebar-bottom">
-        <div class="capacity">
-          <div><span>Engineering capacity</span><strong>86%</strong></div>
-          <div class="meter"><i></i></div>
-          <small>14% unallocated this sprint</small>
-        </div>
-        <div class="profile">
-          <div class="avatar">MB</div>
-          <div><strong>Megan Blechl</strong><span>Head of Implementation</span></div>
-          <button aria-label="Profile menu">•••</button>
+  <main id="top">
+    <section class="hero page-section">
+      <div class="hero-copy">
+        <p class="eyebrow">HEAD OF IMPLEMENTATION · OPERATING MODEL</p>
+        <h1>Make complex enterprise delivery predictable.</h1>
+        <p class="hero-lead">I would build an implementation function that exposes technical risk early, gives every dependency an owner, protects scarce capacity, and turns steering meetings into decisions.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#case-study">See how it works</a>
+          <button class="button secondary" id="briefButton">View steering brief</button>
         </div>
       </div>
-    </aside>
+      <aside class="principles" aria-label="Operating principles">
+        <p class="eyebrow">THE LEADERSHIP SYSTEM</p>
+        <ol>
+          <li><span>01</span><strong>Qualify risk before commitment.</strong></li>
+          <li><span>02</span><strong>Pass gates with evidence, not optimism.</strong></li>
+          <li><span>03</span><strong>Escalate decisions with consequences.</strong></li>
+        </ol>
+      </aside>
+    </section>
 
-    <main>
-      <header class="topbar">
-        <button class="mobile-menu" aria-label="Open menu">☰</button>
-        <div class="breadcrumb"><span>Programs</span><b>/</b>Delivery control plane</div>
-        <div class="top-actions">
-          <button class="icon-button" aria-label="Search">⌕</button>
-          <button class="icon-button notification" aria-label="Notifications">♢<i></i></button>
-          <button class="primary-button" id="execBriefBtn"><span>✦</span> Generate steering brief</button>
-        </div>
-      </header>
+    <div class="disclosure" role="note">
+      <strong>About this work</strong>
+      <p>This is an independent operating-model concept created by Megan Blechl for a Head of Implementation role. Customer names, people, dates, and deployment data are fictional.</p>
+    </div>
 
-      <section class="content" id="overview">
-        <div class="welcome-row">
-          <div>
-            <p class="eyebrow">GLOBAL ENTERPRISE DELIVERY · 11 AUGUST</p>
-            <h1>The deployment system, in one view.</h1>
-            <p>Seven health systems. Two readiness risks. One resourcing decision before it becomes a customer problem.</p>
+    <section class="page-section" id="method">
+      <div class="section-heading">
+        <p class="eyebrow">01 · THE OPERATING MODEL</p>
+        <h2>Seven gates. One controlled path to value.</h2>
+        <p>A deployment moves only when the outcome is clear, ownership is named, and evidence is recorded.</p>
+      </div>
+      <ol class="gate-list">
+        <li><span>01</span><div><h3>Scope confirmed</h3><p>Sites, workflows, integrations, responsibilities, and exclusions agreed.</p></div><small>Evidence: signed scope</small></li>
+        <li><span>02</span><div><h3>Environment ready</h3><p>Security, hosting, network, identity, and test environments approved.</p></div><small>Evidence: readiness sign-off</small></li>
+        <li><span>03</span><div><h3>Solution configured</h3><p>Roles, permissions, templates, and site settings validated.</p></div><small>Evidence: configuration record</small></li>
+        <li><span>04</span><div><h3>Integration validated</h3><p>EHR, identity, mappings, and clinical scenarios tested end to end.</p></div><small>Evidence: test results</small></li>
+        <li><span>05</span><div><h3>Go-live ready</h3><p>Governance, enablement, support, cutover, and rollback confirmed.</p></div><small>Evidence: go-live approval</small></li>
+        <li><span>06</span><div><h3>Stabilised</h3><p>Production is stable, critical defects are closed, and monitoring is active.</p></div><small>Evidence: stability measures</small></li>
+        <li><span>07</span><div><h3>Handover accepted</h3><p>Customer Success and Support accept ownership, risks, and actions.</p></div><small>Evidence: accepted handover</small></li>
+      </ol>
+    </section>
+
+    <section class="case-section" id="case-study">
+      <div class="section-heading light">
+        <p class="eyebrow">02 · WORKED CASE STUDY</p>
+        <h2>Turn a technical blocker into an executive decision.</h2>
+        <p>Daisy Health is approaching cutover without an accountable customer identity owner.</p>
+      </div>
+      <div class="case-flow">
+        <article><span>01 · SIGNAL</span><h3>Ownership is missing</h3><p>The SAML attribute map cannot be approved because no customer IT owner is accountable.</p></article>
+        <article><span>02 · CONSEQUENCE</span><h3>The buffer reaches zero</h3><p>If ownership is not assigned within 48 hours, the team cannot protect a stable production cutover.</p></article>
+        <article><span>03 · DECISION</span><h3>Assign or replan</h3><p>The CIO assigns an identity owner today, or cutover moves one week. The risk does not remain implicit.</p></article>
+        <article><span>04 · EVIDENCE</span><h3>Pass the gate deliberately</h3><p>Proceed only when the attribute map, test result, owner, and sign-off are recorded.</p></article>
+      </div>
+      <button class="button lime" id="caseBriefButton">Open the executive brief</button>
+    </section>
+
+    <section class="page-section" id="decisions">
+      <div class="section-heading">
+        <p class="eyebrow">03 · LEADERSHIP JUDGMENT</p>
+        <h2>Protect the customer and the roadmap.</h2>
+        <p>Two common implementation pressures require explicit trade-offs—not status reporting.</p>
+      </div>
+      <div class="decision-grid">
+        <article class="decision-card">
+          <p class="card-label">CAPACITY COLLISION</p>
+          <h3>Two cutovers need the same integration engineer.</h3>
+          <p>Choose a response, then see the delivery consequence.</p>
+          <div class="choice-list" role="group" aria-label="Capacity options">
+            <button data-choice="move">Move Iris validation five days <small>Lowest customer risk</small></button>
+            <button data-choice="reassign">Reassign the work <small>Introduces a skills gap</small></button>
+            <button data-choice="contract">Add specialist capacity <small>Adds $8.4k cost</small></button>
           </div>
-          <div class="week-pill"><span>Stage gates passed</span><strong>31 <small>/ 36</small></strong></div>
-        </div>
+          <div class="choice-result" id="choiceResult" aria-live="polite">Select an option to expose the trade-off.</div>
+        </article>
+        <article class="decision-card scope-card">
+          <p class="card-label">SCOPE BOUNDARY</p>
+          <h3>Configure the interface. Do not create a product gap.</h3>
+          <p>Iris Health’s ADT variance matches an existing mapping pattern. Configuration resolves the requirement in four days; a new build takes twelve and consumes roadmap capacity.</p>
+          <div class="comparison"><span>Configure <b>4 days</b></span><span>New build <b>12 days</b></span></div>
+          <strong class="decision-line">Decision: use the proven configuration path.</strong>
+        </article>
+      </div>
+    </section>
 
-        <section class="metric-grid" aria-label="Portfolio metrics">
-          <article class="metric-card">
-            <div class="metric-top"><span>Active deployments</span><span class="metric-icon lavender">♙</span></div>
-            <div class="metric-value">7</div>
-            <div class="metric-foot"><span class="trend up">5 regions</span> 23 sites in scope</div>
-          </article>
-          <article class="metric-card">
-            <div class="metric-top"><span>Milestones on time</span><span class="metric-icon green">✓</span></div>
-            <div class="metric-value">91%</div>
-            <div class="metric-foot"><span class="trend up">↗ 4 pts</span> comparable deployments</div>
-          </article>
-          <article class="metric-card">
-            <div class="metric-top"><span>Median technical onboarding</span><span class="metric-icon blue">◫</span></div>
-            <div class="metric-value">38d</div>
-            <div class="metric-foot"><span class="trend up">↓ 9 days</span> vs prior quarter</div>
-          </article>
-          <article class="metric-card attention">
-            <div class="metric-top"><span>Readiness risks</span><span class="metric-icon coral">!</span></div>
-            <div class="metric-value">2</div>
-            <div class="metric-foot"><span class="trend down">1 capacity</span> decision due today</div>
-          </article>
-        </section>
+    <section class="fit-section" id="fit">
+      <div class="section-heading">
+        <p class="eyebrow">04 · WHAT THIS DEMONSTRATES</p>
+        <h2>The capabilities I would bring to the role.</h2>
+        <p>This concept makes the operating approach tangible. It does not present fictional deployment results as personal achievements.</p>
+      </div>
+      <div class="fit-grid">
+        <article><span>OPERATING DISCIPLINE</span><h3>A repeatable global methodology</h3><p>Clear stages, exit criteria, ownership, exceptions, and handover controls.</p></article>
+        <article><span>TECHNICAL COORDINATION</span><h3>Lead discovery with the right specialists</h3><p>Bring customer, Product, Engineering, and technical experts together to clarify requirements, ownership, dependencies, and delivery risk.</p></article>
+        <article><span>EXECUTIVE LEADERSHIP</span><h3>Decisions at the right altitude</h3><p>Risks translated into customer impact, options, owners, deadlines, and consequences.</p></article>
+        <article><span>CROSS-FUNCTIONAL JUDGMENT</span><h3>Healthy commercial boundaries</h3><p>Sales, Product, Engineering, Implementation, and Customer Success aligned before commitments harden.</p></article>
+        <article><span>TEAM LEADERSHIP</span><h3>Readiness-based development</h3><p>Implementation managers progress through observable capability, not passive onboarding.</p></article>
+        <article><span>PORTFOLIO CONTROL</span><h3>Capacity matched to milestones</h3><p>Critical skills are forecast early enough to sequence work before customers feel the conflict.</p></article>
+      </div>
+    </section>
+  </main>
 
-        <div class="main-grid">
-          <section class="panel launches-panel">
-            <div class="panel-head">
-              <div><h2>Technical deployment portfolio</h2><p>Stage-gate progress from signed contract to stable handover</p></div>
-              <div class="filter-group" role="group" aria-label="Filter launches">
-                <button class="filter active" data-filter="all">All</button>
-                <button class="filter" data-filter="risk">Readiness risk</button>
-              </div>
-            </div>
-            <div class="launch-table">
-              <div class="table-head"><span>Health system</span><span>Stage gate</span><span>Readiness</span><span>Critical dependency</span><span></span></div>
-              <button class="launch-row" data-risk="false" data-client="Poppy Health">
-                <span class="customer"><i class="logo rg">P</i><span><strong>Poppy Health</strong><small>5 sites · Epic · AU</small></span></span>
-                <span><b class="status live">Stabilise</b><small>Gate 6 of 7</small></span>
-                <span class="activation"><strong>94%</strong><i><b style="width:94%"></b></i></span>
-                <span><strong>Production sign-off</strong><small>14 Aug · CMIO owner</small></span>
-                <span class="chevron">›</span>
-              </button>
-              <button class="launch-row risk-row" data-risk="true" data-client="Daisy Health">
-                <span class="customer"><i class="logo nc">D</i><span><strong>Daisy Health</strong><small>3 sites · Cerner · UK</small></span></span>
-                <span><b class="status risk">Blocked</b><small>Gate 2 of 7</small></span>
-                <span class="activation"><strong>58%</strong><i><b style="width:58%"></b></i></span>
-                <span><strong>SAML attribute map</strong><small class="overdue">Today · IT owner missing</small></span>
-                <span class="chevron">›</span>
-              </button>
-              <button class="launch-row" data-risk="false" data-client="Iris Health">
-                <span class="customer"><i class="logo cc">I</i><span><strong>Iris Health</strong><small>8 sites · Epic · US</small></span></span>
-                <span><b class="status training">Integrate</b><small>Gate 4 of 7</small></span>
-                <span class="activation"><strong>82%</strong><i><b style="width:82%"></b></i></span>
-                <span><strong>HL7 validation</strong><small>16 Aug · Integration team</small></span>
-                <span class="chevron">›</span>
-              </button>
-              <button class="launch-row" data-risk="false" data-client="Lily Health">
-                <span class="customer"><i class="logo bm">L</i><span><strong>Lily Health</strong><small>7 sites · MedDirector · AU</small></span></span>
-                <span><b class="status setup">Scope</b><small>Gate 1 of 7</small></span>
-                <span class="activation"><strong>71%</strong><i><b style="width:71%"></b></i></span>
-                <span><strong>Environment sign-off</strong><small>13 Aug · Security owner</small></span>
-                <span class="chevron">›</span>
-              </button>
-            </div>
-            <button class="text-button">View all 7 deployments <span>→</span></button>
-          </section>
+  <footer>
+    <strong>Megan Blechl</strong>
+    <span>Enterprise implementation operating model</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
 
-          <aside class="panel focus-panel">
-            <div class="panel-head"><div><h2>Decisions, not updates</h2><p>Prioritised by deployment impact</p></div><span class="count">3</span></div>
-            <div class="focus-list">
-              <article class="focus-item urgent">
-                <div class="focus-time">9:30<small>AM</small></div>
-                <div><span class="mini-label">UNBLOCK · DAISY HEALTH</span><strong>Assign identity owner</strong><p>SAML mapping has no Trust owner. Cutover buffer reaches zero in 48 hours.</p><button data-action="plan">Open escalation →</button></div>
-              </article>
-              <article class="focus-item">
-                <div class="focus-time">1:00<small>PM</small></div>
-                <div><span class="mini-label">DECIDE · IRIS HEALTH</span><strong>Configure, don’t build</strong><p>ADT feed variance matches an existing interface mapping pattern.</p><button data-action="brief">Review evidence →</button></div>
-              </article>
-              <article class="focus-item">
-                <div class="focus-time">3:30<small>PM</small></div>
-                <div><span class="mini-label">ALLOCATE · GLOBAL</span><strong>Resolve integration collision</strong><p>Two cutovers need the same engineer. Sequence before steering.</p><button data-action="brief">Make resourcing call →</button></div>
-              </article>
-            </div>
-          </aside>
-        </div>
-
-        <div class="lower-grid">
-          <section class="panel adoption-panel">
-            <div class="panel-head"><div><h2>Milestone attainment</h2><p>Technical stage gates passed on time vs target</p></div><div class="legend"><span><i class="actual"></i>Actual</span><span><i class="target"></i>Target</span></div></div>
-            <div class="chart-wrap">
-              <div class="y-axis"><span>80%</span><span>60%</span><span>40%</span><span>20%</span><span>0%</span></div>
-              <svg viewBox="0 0 700 210" role="img" aria-label="Activation rising from 12 to 68 percent over seven weeks">
-                <defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6257e7" stop-opacity=".22"/><stop offset="1" stop-color="#6257e7" stop-opacity="0"/></linearGradient></defs>
-                <g class="grid-lines"><line x1="0" y1="15" x2="700" y2="15"/><line x1="0" y1="62" x2="700" y2="62"/><line x1="0" y1="109" x2="700" y2="109"/><line x1="0" y1="156" x2="700" y2="156"/><line x1="0" y1="203" x2="700" y2="203"/></g>
-                <path class="area" d="M0 175 C55 166 60 154 115 147 S180 119 230 118 S300 91 350 89 S420 67 465 64 S535 49 580 44 S645 39 700 35 L700 203 L0 203Z"/>
-                <path class="target-line" d="M0 180 L115 156 L230 132 L350 108 L465 85 L580 61 L700 38"/>
-                <path class="actual-line" d="M0 175 C55 166 60 154 115 147 S180 119 230 118 S300 91 350 89 S420 67 465 64 S535 49 580 44 S645 39 700 35"/>
-                <g class="dots"><circle cx="0" cy="175"/><circle cx="115" cy="147"/><circle cx="230" cy="118"/><circle cx="350" cy="89"/><circle cx="465" cy="64"/><circle cx="580" cy="44"/><circle cx="700" cy="35"/></g>
-              </svg>
-              <div class="x-axis"><span>W1</span><span>W2</span><span>W3</span><span>W4</span><span>W5</span><span>W6</span><span>W7</span></div>
-            </div>
-          </section>
-
-          <section class="panel insight-panel">
-            <div class="insight-kicker"><span>✦</span> SIGNAL OF THE WEEK</div>
-            <h2>This is configuration,<br>not a product gap.</h2>
-            <p>Iris Health’s ADT variance matches an existing interface pattern. Keep it out of the roadmap and protect <strong>8 engineering days.</strong></p>
-            <div class="compare-bars">
-              <div><span>Configure</span><i><b style="width:86%"></b></i><strong>4d</strong></div>
-              <div><span>New build</span><i><b style="width:37%"></b></i><strong>12d</strong></div>
-            </div>
-            <button id="applyInsight">Record scope decision <span>→</span></button>
-          </section>
-        </div>
-
-        <section class="capacity-tool" id="capacity">
-          <div class="tool-head">
-            <div><p class="eyebrow">CAPACITY SCENARIO PLANNER</p><h2>Make the resourcing call before customers feel it.</h2><p>Forecast critical skills across the next six weeks and resolve collisions against deployment milestones.</p></div>
-            <div class="capacity-summary"><span><b>86%</b> allocated</span><span class="risk-summary"><b id="conflictCount">1</b> conflict</span><span><b>14%</b> buffer</span></div>
-          </div>
-          <div class="capacity-grid-wrap">
-            <div class="capacity-grid capacity-grid-head"><span>Resource / skill</span><span>W1</span><span>W2</span><span>W3</span><span>W4</span><span>W5</span><span>W6</span></div>
-            <div class="capacity-grid"><span class="resource-person"><i class="person-a">AK</i><span><strong>Alex Kim</strong><small>Epic · HL7</small></span></span><span class="load medium">65%</span><span class="load high">90%</span><span class="load conflict">125%</span><span class="load conflict">115%</span><span class="load high">85%</span><span class="load medium">70%</span></div>
-            <div class="capacity-grid"><span class="resource-person"><i class="person-b">SR</i><span><strong>Sam Rivera</strong><small>Cerner · FHIR</small></span></span><span class="load medium">70%</span><span class="load medium">75%</span><span class="load high">85%</span><span class="load high">90%</span><span class="load medium">75%</span><span class="load medium">60%</span></div>
-            <div class="capacity-grid"><span class="resource-person"><i class="person-c">JT</i><span><strong>Jordan Taylor</strong><small>Identity · Entra</small></span></span><span class="load high">80%</span><span class="load high">85%</span><span class="load high">90%</span><span class="load medium">75%</span><span class="load medium">65%</span><span class="load low">45%</span></div>
-            <div class="capacity-grid"><span class="resource-person"><i class="person-d">PM</i><span><strong>Priya Mehta</strong><small>Implementation lead</small></span></span><span class="load medium">75%</span><span class="load high">85%</span><span class="load high">95%</span><span class="load high">90%</span><span class="load high">85%</span><span class="load medium">70%</span></div>
-          </div>
-          <div class="collision-card" id="collisionCard">
-            <div class="collision-alert">!</div><div><span class="mini-label">WEEK 3–4 · EPIC INTEGRATION</span><strong>Poppy Health and Iris Health require Alex at the same time.</strong><p>Both integration-validation windows currently consume 125% of available capacity.</p></div>
-            <div class="scenario-options"><button data-scenario="move">Move Iris validation +5d <small>Lowest risk</small></button><button data-scenario="reassign">Reassign Poppy to Sam <small>Skills gap</small></button><button data-scenario="contract">Add specialist capacity <small>+$8.4k</small></button></div>
-          </div>
-          <div class="decision-banner" id="capacityDecision" hidden><span>✓</span><div><strong>Resourcing decision recorded</strong><p>Iris Health validation moved five days. Both cutovers retain full engineering coverage; customer milestone remains on time.</p></div><button id="resetScenario">Reset</button></div>
-        </section>
-
-        <section class="learning-section" id="learning">
-          <div class="learning-header">
-            <div>
-              <p class="eyebrow">IMPLEMENTATION FIELD MANUAL</p>
-              <h2>Build technical fluency.<br>Deploy with confidence.</h2>
-              <p>Practical guides for leading complex health-system deployments—from discovery questions to evidence-based sign-off.</p>
-            </div>
-            <div class="learning-progress">
-              <div class="progress-ring"><strong id="progressCount">0</strong><span>/ 6</span></div>
-              <div><strong>Guides completed</strong><small>Progress is saved on this device</small></div>
-            </div>
-          </div>
-
-          <div class="guide-grid">
-            <button class="guide-card" data-guide="sso">
-              <span class="guide-number">01</span><span class="guide-level">CORE · 35 MIN</span>
-              <i class="guide-icon purple-guide">ID</i>
-              <h3>SSO & SAML readiness</h3>
-              <p>Lead identity discovery, map the trust exchange, validate claims and prevent certificate surprises.</p>
-              <span class="guide-outcome">Outcome: signed identity checklist <b>→</b></span>
-            </button>
-            <button class="guide-card" data-guide="ehr">
-              <span class="guide-number">02</span><span class="guide-level">CORE · 45 MIN</span>
-              <i class="guide-icon blue-guide">EHR</i>
-              <h3>EHR integration patterns</h3>
-              <p>Know when to use embedded launch, FHIR APIs, HL7 feeds, write-back or a lightweight workflow.</p>
-              <span class="guide-outcome">Outcome: integration context diagram <b>→</b></span>
-            </button>
-            <button class="guide-card" data-guide="hl7">
-              <span class="guide-number">03</span><span class="guide-level">TECHNICAL · 45 MIN</span>
-              <i class="guide-icon green-guide">{ }</i>
-              <h3>HL7 & FHIR essentials</h3>
-              <p>Read the nouns, flows and failure modes well enough to run a dependency review without bluffing.</p>
-              <span class="guide-outcome">Outcome: interface validation plan <b>→</b></span>
-            </button>
-            <button class="guide-card" data-guide="security">
-              <span class="guide-number">04</span><span class="guide-level">GOVERNANCE · 30 MIN</span>
-              <i class="guide-icon coral-guide">✓</i>
-              <h3>Security & environment readiness</h3>
-              <p>Turn security, privacy, hosting and network questions into owned evidence before engineering starts.</p>
-              <span class="guide-outcome">Outcome: readiness gate pack <b>→</b></span>
-            </button>
-            <button class="guide-card" data-guide="cutover">
-              <span class="guide-number">05</span><span class="guide-level">DELIVERY · 35 MIN</span>
-              <i class="guide-icon amber-guide">GO</i>
-              <h3>Cutover & stabilisation</h3>
-              <p>Build a reversible go-live, run command-centre governance and hand over only when stable.</p>
-              <span class="guide-outcome">Outcome: go/no-go runbook <b>→</b></span>
-            </button>
-            <button class="guide-card" data-guide="scope">
-              <span class="guide-number">06</span><span class="guide-level">JUDGMENT · 25 MIN</span>
-              <i class="guide-icon lime-guide">?</i>
-              <h3>Build vs configure</h3>
-              <p>Separate product gaps from configuration and deployment issues with a repeatable evidence test.</p>
-              <span class="guide-outcome">Outcome: scope decision record <b>→</b></span>
-            </button>
-          </div>
-        </section>
-
-        <section class="methodology-section" id="playbooks">
-          <div class="methodology-head">
-            <div>
-              <p class="eyebrow">DELIVERY METHODOLOGY</p>
-              <h2>Seven gates. One controlled path to value.</h2>
-              <p>Every deployment moves from signed scope to an accepted handover. A gate passes only when its accountable owner provides objective evidence.</p>
-            </div>
-            <div class="gate-rule"><span>GATE RULE</span><strong>No green by silence.</strong><p>Pass, conditional pass or hold—recorded with evidence.</p></div>
-          </div>
-
-          <div class="gate-path" aria-label="Seven implementation stage gates">
-            <article class="gate-card complete">
-              <header><span>01</span><i>✓</i></header><h3>Scope confirmed</h3><p>Sites, workflows, integrations, responsibilities and exclusions agreed.</p>
-              <div><strong>Exit evidence</strong><span>Signed scope and deployment RACI</span></div>
-            </article>
-            <article class="gate-card active">
-              <header><span>02</span><i>!</i></header><h3>Environment ready</h3><p>Security, privacy, hosting, network, SSO and test environments approved.</p>
-              <div><strong>Exit evidence</strong><span>Readiness pack and owner sign-offs</span></div>
-            </article>
-            <article class="gate-card">
-              <header><span>03</span><i>3</i></header><h3>Solution configured</h3><p>Roles, teams, templates, permissions and site settings validated.</p>
-              <div><strong>Exit evidence</strong><span>Approved configuration workbook</span></div>
-            </article>
-            <article class="gate-card">
-              <header><span>04</span><i>4</i></header><h3>Integration validated</h3><p>EHR, identity, mappings and clinical scenarios tested end to end.</p>
-              <div><strong>Exit evidence</strong><span>Signed interface test report</span></div>
-            </article>
-            <article class="gate-card">
-              <header><span>05</span><i>5</i></header><h3>Go-live ready</h3><p>Governance, enablement, support, cutover and rollback confirmed.</p>
-              <div><strong>Exit evidence</strong><span>Go/no-go decision record</span></div>
-            </article>
-            <article class="gate-card">
-              <header><span>06</span><i>6</i></header><h3>Stabilised</h3><p>Production is stable, critical defects closed and monitoring active.</p>
-              <div><strong>Exit evidence</strong><span>Hypercare exit report</span></div>
-            </article>
-            <article class="gate-card">
-              <header><span>07</span><i>7</i></header><h3>Handover accepted</h3><p>Customer Success and Support accept ownership, risks and actions.</p>
-              <div><strong>Exit evidence</strong><span>Accepted service handover</span></div>
-            </article>
-          </div>
-
-          <div class="methodology-foot">
-            <div><span>Every gate has</span><strong>A named owner</strong><strong>Objective criteria</strong><strong>Evidence</strong><strong>Exceptions</strong><strong>A decision date</strong></div>
-            <p><b>Current control:</b> Daisy Health is held at Gate 2 until an identity owner and approved SAML attribute map are evidenced.</p>
-          </div>
-        </section>
-
-        <section class="delivery-toolkit" id="delivery-tools">
-          <div class="tool-head">
-            <div><p class="eyebrow">SIX-WEEK EXECUTION TOOLKIT</p><h2>From signed deal to a team that can deliver.</h2><p>Four reusable workspaces turn the remaining role outcomes into controlled, repeatable execution.</p></div>
-            <div class="tool-tabs" role="tablist"><button class="tool-tab active" data-tool="onprem">On-prem scope</button><button class="tool-tab" data-tool="kickoff">Kickoff centre</button><button class="tool-tab" data-tool="ramp">Team ramp</button><button class="tool-tab" data-tool="presales">Pre-signature</button></div>
-          </div>
-
-          <div class="tool-panel active" data-panel="onprem">
-            <div class="workspace-title"><div><span class="workspace-badge">DAISY HEALTH · ON-PREM</span><h3>Environment scope & sign-off plan</h3><p>Confirm requirements before committing integration engineering.</p></div><div class="workspace-score"><strong id="onpremScore">3 / 8</strong><span>requirements confirmed</span></div></div>
-            <div class="workspace-grid">
-              <div class="checklist-card"><h4>Readiness requirements</h4><label><input type="checkbox" class="saved-check onprem-check" checked> Architecture and data flows documented <span>Security</span></label><label><input type="checkbox" class="saved-check onprem-check" checked> Hosting and data residency agreed <span>Privacy</span></label><label><input type="checkbox" class="saved-check onprem-check" checked> Identity pattern and owners confirmed <span>IT</span></label><label><input type="checkbox" class="saved-check onprem-check"> Proxy, firewall and DNS requirements <span>Infrastructure</span></label><label><input type="checkbox" class="saved-check onprem-check"> Non-production environment available <span>IT</span></label><label><input type="checkbox" class="saved-check onprem-check"> Procurement security schedule accepted <span>Procurement</span></label><label><input type="checkbox" class="saved-check onprem-check"> Clinical governance pathway agreed <span>CMIO</span></label><label><input type="checkbox" class="saved-check onprem-check"> Production change window reserved <span>CAB</span></label></div>
-              <div class="timeline-card"><h4>Sign-off timeline</h4><div class="timeline-row done"><i></i><span><strong>Architecture review</strong><small>12 Aug · Solution architect</small></span><b>Done</b></div><div class="timeline-row"><i></i><span><strong>Security & privacy decision</strong><small>16 Aug · CISO / Privacy</small></span><b>4d</b></div><div class="timeline-row"><i></i><span><strong>Infrastructure readiness</strong><small>21 Aug · Trust IT</small></span><b>9d</b></div><div class="timeline-row locked"><i></i><span><strong>Engineering commitment</strong><small>Only after readiness sign-off</small></span><b>Held</b></div><button class="generate-artifact" data-artifact="deployment">Generate deployment plan</button></div>
-            </div>
-          </div>
-
-          <div class="tool-panel" data-panel="kickoff">
-            <div class="workspace-title"><div><span class="workspace-badge">POPPY HEALTH · 5 SITES</span><h3>One kickoff. Two altitudes.</h3><p>Executive decisions in the morning; technical dependencies in the afternoon.</p></div><div class="workspace-score"><strong>18 Aug</strong><span>kickoff date</span></div></div>
-            <div class="agenda-grid">
-              <article class="agenda-card"><header><span>09:00–10:00</span><b>EXECUTIVE STEERING</b></header><h4>Decide outcomes and governance</h4><ol><li>Value outcomes and success measures <b>10m</b></li><li>Five-site rollout scope and sequence <b>15m</b></li><li>Governance and decision rights <b>15m</b></li><li>Top risks and decisions required <b>10m</b></li><li>Actions and next steering date <b>10m</b></li></ol><button class="generate-artifact" data-artifact="steering">Generate steering pack</button></article>
-              <article class="agenda-card technical"><header><span>13:00–14:30</span><b>IT DEPENDENCY REVIEW</b></header><h4>Prove the critical path</h4><ol><li>Environment and network topology <b>20m</b></li><li>SSO, claims and provisioning <b>15m</b></li><li>Epic interface and test data <b>25m</b></li><li>Security and change approvals <b>15m</b></li><li>Owners, dates and gate evidence <b>15m</b></li></ol><button class="generate-artifact" data-artifact="dependencies">Generate dependency log</button></article>
-              <aside class="site-sequence"><h4>Site rollout sequence</h4><div><span>1</span><p><strong>Central Hospital</strong><small>Pilot · 1 Sep</small></p></div><div><span>2</span><p><strong>North Clinic</strong><small>Wave 2 · 8 Sep</small></p></div><div><span>3</span><p><strong>East Clinic</strong><small>Wave 2 · 8 Sep</small></p></div><div><span>4</span><p><strong>West Hospital</strong><small>Wave 3 · 15 Sep</small></p></div><div><span>5</span><p><strong>Community Care</strong><small>Wave 3 · 15 Sep</small></p></div></aside>
-            </div>
-          </div>
-
-          <div class="tool-panel" data-panel="ramp">
-            <div class="workspace-title"><div><span class="workspace-badge">NEW HIRE · IMPLEMENTATION MANAGER</span><h3>Independent account leadership in three weeks.</h3><p>A readiness-based ramp—not passive onboarding.</p></div><div class="workspace-score"><strong id="rampScore">33%</strong><span>ramp complete</span></div></div>
-            <div class="ramp-grid">
-              <article><header><span>WEEK 1</span><b>Learn & observe</b></header><label><input type="checkbox" class="saved-check ramp-check" checked> Product workflow certification</label><label><input type="checkbox" class="saved-check ramp-check" checked> Seven-gate methodology lab</label><label><input type="checkbox" class="saved-check ramp-check" checked> Shadow customer dependency review</label><div class="week-gate">Exit: explain a deployment end to end</div></article>
-              <article><header><span>WEEK 2</span><b>Lead with support</b></header><label><input type="checkbox" class="saved-check ramp-check"> Run internal account review</label><label><input type="checkbox" class="saved-check ramp-check"> Lead customer status meeting</label><label><input type="checkbox" class="saved-check ramp-check"> Produce first steering brief</label><div class="week-gate">Exit: manager observes and signs off</div></article>
-              <article><header><span>WEEK 3</span><b>Own the account</b></header><label><input type="checkbox" class="saved-check ramp-check"> Own plan, risks and decisions</label><label><input type="checkbox" class="saved-check ramp-check"> Run technical dependency review</label><label><input type="checkbox" class="saved-check ramp-check"> Pass account-readiness review</label><div class="week-gate">Exit: independent caseload approved</div></article>
-            </div>
-          </div>
-
-          <div class="tool-panel" data-panel="presales">
-            <div class="workspace-title"><div><span class="workspace-badge">SALES × SOLUTIONS × IMPLEMENTATION</span><h3>Pre-signature technical readiness gate</h3><p>Expose material unknowns before they become contracted go-live blockers.</p></div><div class="readiness-verdict hold" id="presalesVerdict"><strong>HOLD</strong><span>5 items unresolved</span></div></div>
-            <div class="presales-layout"><div class="presales-checks"><label><input type="checkbox" class="saved-check presales-check" checked><span><strong>Health-system scope</strong><small>Sites, clinicians, specialties and rollout waves</small></span><b>Sales</b></label><label><input type="checkbox" class="saved-check presales-check" checked><span><strong>EHR environment</strong><small>Product, version, hosting and integration pattern</small></span><b>Solutions</b></label><label><input type="checkbox" class="saved-check presales-check" checked><span><strong>Identity requirements</strong><small>IdP, SSO protocol, provisioning and owners</small></span><b>Solutions</b></label><label><input type="checkbox" class="saved-check presales-check"><span><strong>Network and on-prem constraints</strong><small>Proxy, firewall, device and environment requirements</small></span><b>Customer IT</b></label><label><input type="checkbox" class="saved-check presales-check"><span><strong>Security and clinical governance</strong><small>Review pathways, evidence and decision lead times</small></span><b>Customer</b></label><label><input type="checkbox" class="saved-check presales-check"><span><strong>Engineering estimate</strong><small>Confirmed configuration versus new work</small></span><b>Engineering</b></label><label><input type="checkbox" class="saved-check presales-check"><span><strong>Procurement timeline</strong><small>Legal, security schedules and dependencies</small></span><b>Sales</b></label><label><input type="checkbox" class="saved-check presales-check"><span><strong>Responsible go-live date</strong><small>Derived from evidence and lead times</small></span><b>Implementation</b></label></div><aside class="signature-panel"><h4>Contract gate</h4><p>All material unknowns must be either confirmed or recorded as an accepted assumption with an owner and decision date.</p><div><span>Confirmed</span><strong id="presalesCount">3 / 8</strong></div><button class="generate-artifact" data-artifact="presales">Generate readiness summary</button></aside></div>
-          </div>
-        </section>
-
-        <footer><span>Independent concept by Megan Blechl</span><span>Build the machine while delivering.</span></footer>
-      </section>
-    </main>
-  </div>
-
-  <div class="toast" role="status" aria-live="polite"><span>✓</span><div><strong>Decision recorded</strong><small>Configuration path approved; 8 engineering days protected.</small></div></div>
-
-  <div class="modal-backdrop" id="modal" aria-hidden="true">
-    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-      <button class="modal-close" aria-label="Close">×</button>
-      <div class="modal-icon">✦</div>
-      <p class="eyebrow">STEERING BRIEF · 11 AUGUST</p>
-      <h2 id="modalTitle">Portfolio is controlled.<br>One owner decision required.</h2>
-      <div class="brief-stat"><div><span>On-time gates</span><strong>91%</strong></div><div><span>Deployments</span><strong>7</strong></div><div><span>Risks</span><strong class="red">2</strong></div></div>
-      <div class="brief-section"><strong>Decision needed</strong><p>Daisy Health’s CIO to assign an identity owner today. Without an approved SAML attribute map by Thursday, cutover moves one week to protect production stability.</p></div>
-      <div class="brief-section"><strong>Scope boundary</strong><p>Iris Health’s ADT request is configuration, not a product gap. Existing mapping closes it in four days without roadmap impact.</p></div>
-      <div class="modal-actions"><button class="secondary modal-close-action">Close</button><button class="primary-button copy-brief">Copy brief</button></div>
+  <div class="modal-backdrop" id="briefModal" aria-hidden="true">
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="briefTitle">
+      <button class="modal-close" aria-label="Close brief">×</button>
+      <p class="eyebrow">EXECUTIVE STEERING BRIEF</p>
+      <h2 id="briefTitle">One owner decision protects the cutover.</h2>
+      <div class="brief-block"><strong>Decision required</strong><p>Daisy Health’s CIO assigns an identity owner today or approves moving cutover by one week.</p></div>
+      <div class="brief-block"><strong>Why now</strong><p>The SAML attribute map remains unapproved and the cutover buffer reaches zero within 48 hours.</p></div>
+      <div class="brief-block"><strong>Evidence to proceed</strong><p>Named owner, approved attribute map, successful identity test, and recorded readiness sign-off.</p></div>
+      <button class="button primary modal-done">Close brief</button>
     </section>
   </div>
 
-  <div class="guide-backdrop" id="guideModal" aria-hidden="true">
-    <article class="guide-drawer" role="dialog" aria-modal="true" aria-labelledby="guideTitle">
-      <header class="guide-drawer-head">
-        <div><p class="eyebrow" id="guideKicker">FIELD GUIDE</p><h2 id="guideTitle">Guide title</h2><p id="guideIntro"></p></div>
-        <button class="guide-close" aria-label="Close guide">×</button>
-      </header>
-      <div class="guide-body">
-        <aside class="guide-nav" id="guideNav"></aside>
-        <div class="guide-content" id="guideContent"></div>
-      </div>
-      <footer class="guide-footer">
-        <span>Use this guide to lead the work—not replace accountable technical specialists.</span>
-        <button id="completeGuide">Mark guide complete</button>
-      </footer>
-    </article>
-  </div>
   <script src="script.js"></script>
 </body>
 </html>

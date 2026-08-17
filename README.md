@@ -1,60 +1,64 @@
-# Project Control
+# Enterprise Implementation Operating Model
 
-An enterprise technical-deployment control plane created for a Head of Implementation application.
+A focused case study created by Megan Blechl for a Head of Implementation role.
 
-## Why this concept
+The site shows how a complex health-system implementation function can:
 
-The role exists to turn post-sales enterprise delivery into a repeatable competitive advantage. Project Control makes the proposed operating infrastructure tangible: one global portfolio, explicit stage gates, technical readiness, capacity management, scope-boundary decisions, and executive governance.
+- qualify technical risk before commitments are made;
+- move deployments through evidence-based stage gates;
+- translate blockers into executive decisions;
+- manage scarce implementation and engineering capacity;
+- protect Product and Engineering from avoidable custom work;
+- create clear ownership from pre-sales through stable handover.
 
-It demonstrates:
+All customer names, people, dates, and deployment data are fictional. The site demonstrates an operating approach; it does not present fictional results as personal achievements.
 
-- a seven-stage methodology from signed scope through stable CS handover;
-- portfolio and engineering-capacity management across regions;
-- SSO, EHR and environment-readiness ownership;
-- early risk detection with named owners and consequence-based escalation;
-- build-vs-configure judgment that protects the Product roadmap;
-- CIO/CMIO-level reporting that asks for decisions, not status acknowledgement;
-- metrics for technical onboarding time, milestone attainment and deployment variance.
+## Site structure
 
-## Learning Hub
+The page has four main sections:
 
-The site includes six interactive field guides for building practical implementation fluency:
+1. **Operating model** — seven controlled gates from confirmed scope to accepted handover.
+2. **Worked case study** — a missing SAML owner becomes a time-bound executive decision.
+3. **Leadership judgment** — a capacity trade-off and a build-versus-configure decision.
+4. **Role fit** — the implementation capabilities demonstrated by the work.
 
-1. SSO and SAML readiness
-2. EHR integration patterns
-3. HL7 and FHIR essentials
-4. Security and environment readiness
-5. Cutover and stabilisation
-6. Build-vs-configure judgment
+There are only two interactive ideas to understand:
 
-Each guide contains deployment checklists, stage-gate evidence, common failure modes, practice scenarios and official technical references. Completion progress is stored locally in the browser.
+- open and close the executive steering brief;
+- select a capacity option to reveal its consequence.
 
-## Seven-gate methodology
+## Files
 
-The Methodology section defines the controlled deployment path: Scope Confirmed, Environment Ready, Solution Configured, Integration Validated, Go-Live Ready, Stabilised and Handover Accepted. Every gate requires a named owner, objective exit criteria, evidence, recorded exceptions and a decision date.
+- `index.html` contains the content and page structure.
+- `styles.css` contains all layout and visual styling.
+- `script.js` contains the two interactions.
 
-## Operational tools
+There is no framework, build step, package installation, browser storage, or application state.
 
-- **Capacity scenario planner:** exposes a shared Epic-engineer collision, compares resourcing options and records the decision.
-- **On-prem scope workspace:** controls security, infrastructure, procurement and clinical-governance readiness before engineering commitment.
-- **Five-site kickoff centre:** generates separate executive-steering and IT-dependency agendas with a sequenced rollout.
-- **Implementation Manager ramp:** tracks readiness-based progression to independent account leadership within three weeks.
-- **Pre-signature gate:** gives Sales, Solutions Engineering and Implementation one checklist and a live hold/ready decision.
+## Run locally
 
-## Run it
+From PowerShell or Command Prompt in this folder, run:
 
-Open `index.html` in a browser. No build step or dependencies are required. Internet access is only used to load the two Google Fonts; the app otherwise runs locally.
+```bat
+.\serve-local.cmd
+```
 
-## Demo flow (90 seconds)
+The site opens at `http://localhost:8080/`. Press `Ctrl+C` in PowerShell to stop it.
 
-1. Start with the four global portfolio metrics: volume, stage-gate attainment, onboarding time and readiness risk.
-2. Filter the portfolio to **Readiness risk** and open Daisy Health. Explain that SAML work is blocked by customer ownership—not engineering—and that the cutover consequence is already explicit.
-3. Show the capacity collision in **Decisions, not updates**: the system exposes a shared integration-engineer conflict before either customer feels it.
-4. Use **Signal of the week** to classify Iris Health’s ADT variance as configuration rather than a product gap, then record the decision.
-5. Generate the steering brief. It carries the same facts upward at CIO altitude with one named decision and a deadline.
+To use a different port or avoid opening the browser automatically:
 
-## Design notes
+```bat
+.\serve-local.cmd -Port 3000 -NoBrowser
+```
 
-- The organisations, people, metrics, and deployment data shown are fictional.
-- This is an independent application concept built with fictional deployment data.
-- The methodology is intentionally opinionated: no gate passes without evidence, every dependency has an owner, and stabilisation is complete before CS handover.
+You can also open `index.html` directly. Internet access is used only for the two Google Fonts.
+
+## Suggested review flow
+
+In a short interview walkthrough:
+
+1. State the three leadership principles in the opening section.
+2. Explain why evidence is required to pass each implementation gate.
+3. Walk through the Daisy Health risk from signal to executive decision.
+4. Choose the recommended capacity response and explain the trade-off.
+5. Close with the capabilities the operating model demonstrates.
