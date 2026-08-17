@@ -1,30 +1,41 @@
 # Enterprise Implementation Operating Model
 
-A focused case study created by Megan Blechl for a Head of Implementation role.
+A focused evidence portfolio and operating-model proposal created by Megan Blechl for Heidi's Head of Implementation role.
 
 The site shows how a complex health-system implementation function can:
 
-- qualify technical risk before commitments are made;
+- qualify delivery and technical dependencies before commitments are made;
 - move deployments through evidence-based stage gates;
 - translate blockers into executive decisions;
 - manage scarce implementation and engineering capacity;
 - protect Product and Engineering from avoidable custom work;
-- create clear ownership from pre-sales through stable handover.
+- create clear ownership from pre-sales through stable handover;
+- connect technical readiness to clinician activation and sustained use.
 
-All customer names, people, dates, and deployment data are fictional. The site demonstrates an operating approach; it does not present fictional results as personal achievements.
+Career figures and outcomes are sourced from Megan's résumé. The capacity exercise and proposed Heidi operating model are illustrative and are labelled accordingly.
 
 ## Site structure
 
-The page has four main sections:
+The page has six main sections:
 
 1. **Operating model** — seven controlled gates from confirmed scope to accepted handover.
-2. **Worked case study** — a missing SAML owner becomes a time-bound executive decision.
-3. **Leadership judgment** — a capacity trade-off and a build-versus-configure decision.
-4. **Role fit** — the implementation capabilities demonstrated by the work.
+2. **Verified experience** — a real regulation-driven program spanning 30+ multi-site US healthcare organisations.
+3. **Customer value** — the path from readiness to clinician adoption and continuous learning.
+4. **First six weeks at Heidi** — a proposed portfolio view, capacity decision, pre-engineering commitment gate, scope-classification process, two-altitude kickoff, and three-week manager ramp.
+5. **Career evidence and accountability** — measurable delivery outcomes and decision rights across Implementation, specialists, Product, Engineering, and clinical leads.
+6. **90-day ramp** — a candid, measurable plan for learning Heidi's identity, security, product, and clinical-governance context.
+
+Career evidence includes clinical-workflow impact and people development: barcode-enabled implant traceability reduced recall investigation from up to 72 hours to near real time, and multiple direct reports progressed into team-lead and leadership roles.
+
+Continuous-improvement evidence includes designing and implementing a solution-specific lessons-learned framework in Microsoft Lists that converted insights from individual client engagements into reusable practices for later implementations.
+
+The opening section surfaces four centered recruiter-level measures immediately: 15+ years of experience, 40+ engagements, portfolios of seven concurrent engagements, and leadership of a 30+ person deployment team. CHIA remains presented as a credential rather than a metric.
+
+Location is stated accurately: Brisbane-based and open to regular Sydney, Melbourne, and customer travel; relocation is not implied.
 
 There are only two interactive ideas to understand:
 
-- open and close the executive steering brief;
+- open and close the career evidence summary;
 - select a capacity option to reveal its consequence.
 
 ## Files
@@ -59,6 +70,8 @@ In a short interview walkthrough:
 
 1. State the three leadership principles in the opening section.
 2. Explain why evidence is required to pass each implementation gate.
-3. Walk through the Daisy Health risk from signal to executive decision.
-4. Choose the recommended capacity response and explain the trade-off.
-5. Close with the capabilities the operating model demonstrates.
+3. Walk through the 30+ organisation program and explain how the repeatable model reduced delivery time.
+4. Explain why go-live is not the final outcome and how adoption is measured.
+5. Use the first-six-weeks artifacts to explain capacity, pre-contract readiness, scope classification, kickoff governance, and team ramp.
+6. Close with verified career evidence and the accountability model.
+7. Explain how the first 90 days build Heidi-specific fluency while delivering useful work.
