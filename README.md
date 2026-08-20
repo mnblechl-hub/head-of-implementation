@@ -29,7 +29,7 @@ Career evidence includes clinical-workflow impact and people development: barcod
 
 Continuous-improvement evidence includes designing and implementing a solution-specific lessons-learned framework in Microsoft Lists that converted insights from individual client engagements into reusable practices for later implementations.
 
-The opening section surfaces five recruiter-level measures immediately: 40+ healthcare technology engagements, portfolios of up to seven concurrent enterprise engagements, implementation capability spanning 10+ countries, leadership of a 30+ person regulation-driven deployment program, and 20+ professionals led in broader multidisciplinary delivery teams. CHIA remains presented as a credential rather than a metric.
+The opening section surfaces five recruiter-level measures immediately: 40+ enterprise healthcare technology engagements, up to seven concurrent enterprise engagements, implementation capability supported across 10+ countries, 30+ professionals led on the regulation-driven deployment program, and broader multidisciplinary delivery teams of 20+. CHIA remains presented as a credential rather than a metric.
 
 Location is stated accurately: Brisbane-based and available for regular Sydney presence and customer travel; relocation is not implied.
 
