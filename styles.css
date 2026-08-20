@@ -83,7 +83,8 @@ h3 { margin: 0; }
 .primary { background: var(--purple); color: white; }
 .secondary { background: white; color: var(--ink); border-color: var(--line); }
 .lime { margin-top: 26px; background: var(--lime); color: var(--ink); }
-.principles { width: min(1080px, calc(100% - 32px)); margin: 18px auto 48px; padding: 22px 28px; background: var(--purple-dark); color: white; border-radius: 16px; }
+.principles { width: min(1080px, calc(100% - 32px)); margin: 18px auto 0; padding: 22px 28px; background: var(--purple-dark); color: white; border-radius: 16px; }
+.principles + .case-section { margin-top: 48px; }
 .principles .eyebrow { color: var(--lime); }
 .principles ol { display: grid; grid-template-columns: repeat(3, 1fr); margin: 12px 0 0; padding: 0; list-style: none; }
 .principles li { display: grid; grid-template-columns: 34px 1fr; gap: 10px; padding: 10px 20px; border-left: 1px solid #46415f; }
