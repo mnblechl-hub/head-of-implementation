@@ -152,6 +152,10 @@ h3 { margin: 0; }
 .case-flow span, .card-label, .fit-grid span { color: var(--lime); font-size: 10px; font-weight: 700; letter-spacing: 1px; }
 .case-flow h3 { margin: 38px 0 10px; font-size: 18px; }
 .case-flow p { margin: 0; color: #bbb7cb; font-size: 13px; line-height: 1.6; }
+.fit-signals { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 18px; }
+.fit-signals article { padding: 20px 24px; border: 1px solid #49445f; border-radius: 12px; }
+.fit-signals span { color: var(--lime); font-size: 10px; font-weight: 700; letter-spacing: 1px; }
+.fit-signals p { margin: 9px 0 0; color: #ddd9e8; font-size: 13px; line-height: 1.6; }
 .people-proof { display: grid; grid-template-columns: 190px 1fr; gap: 28px; margin-top: 18px; padding: 22px 24px; border: 1px solid #49445f; border-radius: 12px; }
 .people-proof > span { color: var(--lime); font-size: 10px; font-weight: 700; letter-spacing: 1px; }
 .people-proof h3 { margin-bottom: 7px; font-size: 18px; }
@@ -319,7 +323,7 @@ footer a { color: var(--purple); text-decoration: none; }
   .hero-lead { font-size: 17px; }
   .hero-actions { align-items: stretch; flex-direction: column; }
   .hero-evidence { grid-template-columns: 1fr 1fr; }
-  .principles ol, .people-proof { grid-template-columns: 1fr; }
+  .principles ol, .people-proof, .fit-signals { grid-template-columns: 1fr; }
   .principles li, .principles li:first-child { padding: 14px 0; border-left: 0; border-top: 1px solid #46415f; }
   .disclosure { margin-inline: 16px; grid-template-columns: 1fr; gap: 6px; }
   .risk-tiers, .ownership-model { grid-template-columns: 1fr; }

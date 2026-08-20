@@ -27,6 +27,8 @@ The page has six main sections:
 
 Career evidence includes clinical-workflow impact and people development: barcode-enabled implant traceability reduced recall investigation from up to 72 hours to near real time, and multiple direct reports progressed into team-lead and leadership roles.
 
+The verified evidence also includes repeated multi-site delivery, executive-to-technical leadership range, a Belgium interface example demonstrating configuration-versus-custom scope judgment, and direct participation in regional hiring, onboarding, and consultant development.
+
 Continuous-improvement evidence includes designing and implementing a solution-specific lessons-learned framework in Microsoft Lists that converted insights from individual client engagements into reusable practices for later implementations.
 
 The opening section surfaces five recruiter-level measures immediately: 40+ enterprise healthcare technology engagements, up to seven concurrent enterprise engagements, implementation capability supported across 10+ countries, 30+ professionals led on the regulation-driven deployment program, and broader multidisciplinary delivery teams of 20+. CHIA remains presented as a credential rather than a metric.
