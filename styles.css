@@ -89,7 +89,7 @@ h3 { margin: 0; }
 .principles li:first-child { padding-left: 0; border-left: 0; }
 .principles li span { color: var(--lime); font-size: 11px; }
 .principles li strong { font-size: 14px; line-height: 1.5; }
-.hero-evidence { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; width: min(880px, calc(100% - 32px)); margin-inline: auto; background: var(--line); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+.hero-evidence { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; width: min(1080px, calc(100% - 32px)); margin-inline: auto; background: var(--line); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
 .hero-evidence article { display: flex; flex-direction: column; min-height: 130px; padding: 20px; background: white; }
 .hero-evidence strong { color: var(--purple); font: 700 30px Manrope, sans-serif; }
 .hero-evidence span { margin-top: auto; color: var(--muted); font-size: 11px; line-height: 1.4; }
