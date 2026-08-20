@@ -18,20 +18,20 @@ Career figures and outcomes are sourced from Megan's résumé. The capacity exer
 
 The page has six main sections:
 
-1. **Operating model** — seven controlled gates from confirmed scope to accepted handover.
-2. **Verified experience** — a real regulation-driven program spanning 30+ multi-site US healthcare organisations.
-3. **Customer value** — the path from readiness to clinician adoption and continuous learning.
-4. **First six weeks at Heidi** — a proposed portfolio view, capacity decision, pre-engineering commitment gate, scope-classification process, two-altitude kickoff, and three-week manager ramp.
-5. **Career evidence and accountability** — measurable delivery outcomes and decision rights across Implementation, specialists, Product, Engineering, and clinical leads.
-6. **90-day ramp** — a candid, measurable plan for learning Heidi's identity, security, product, and clinical-governance context.
+1. **Why I fit / verified evidence** — a real regulation-driven program spanning 30+ US healthcare organisations.
+2. **First six weeks at Heidi** — a proposed portfolio view, capacity decision, pre-engineering commitment gate, scope-classification process, two-altitude kickoff, and three-week manager ramp.
+3. **Operating model** — seven controlled gates from confirmed scope to accepted handover.
+4. **Customer value** — the path from readiness to clinician adoption and continuous learning.
+5. **Selected career evidence and accountability** — additional delivery outcomes and clear decision rights across Implementation, specialists, Product, Engineering, and clinical leads.
+6. **Targeted 90-day ramp** — a candid plan for learning Heidi's identity and SSO architecture, security, product, and clinical-governance context.
 
 Career evidence includes clinical-workflow impact and people development: barcode-enabled implant traceability reduced recall investigation from up to 72 hours to near real time, and multiple direct reports progressed into team-lead and leadership roles.
 
 Continuous-improvement evidence includes designing and implementing a solution-specific lessons-learned framework in Microsoft Lists that converted insights from individual client engagements into reusable practices for later implementations.
 
-The opening section surfaces four centered recruiter-level measures immediately: 15+ years of experience, 40+ engagements, portfolios of seven concurrent engagements, and leadership of a 30+ person deployment team. CHIA remains presented as a credential rather than a metric.
+The opening section surfaces four recruiter-level measures immediately: 40+ healthcare technology engagements, portfolios of up to seven concurrent enterprise engagements, implementation capability spanning 10+ countries, and leadership of a 30+ person regulation-driven deployment team. CHIA remains presented as a credential rather than a metric.
 
-Location is stated accurately: Brisbane-based and open to regular Sydney, Melbourne, and customer travel; relocation is not implied.
+Location is stated accurately: Brisbane-based and available for regular Sydney presence and customer travel; relocation is not implied.
 
 There are only two interactive ideas to understand:
 

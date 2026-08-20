@@ -71,7 +71,7 @@ h3 { margin: 0; }
 }
 .hero-lead { max-width: 690px; margin: 26px 0; color: var(--muted); font-size: 20px; line-height: 1.65; }
 .credential-line { margin: -12px 0 26px; color: #514d63; font-size: 13px; font-weight: 600; }
-.hero-actions { display: flex; gap: 10px; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 10px; }
 .button {
   display: inline-flex;
   justify-content: center;
