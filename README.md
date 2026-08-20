@@ -19,7 +19,7 @@ Career figures and outcomes are sourced from Megan's résumé. The capacity exer
 The page has six main sections:
 
 1. **Why I fit / verified evidence** — a real regulation-driven program spanning 30+ US healthcare organisations.
-2. **First six weeks at Heidi** — a proposed portfolio view, capacity decision, pre-engineering commitment gate, scope-classification process, two-altitude kickoff, and three-week manager ramp.
+2. **First six weeks at Heidi** — a proposed portfolio view, capacity decision, pre-engineering commitment gate, scope-classification process, executive and technical kickoff, and three-week manager ramp.
 3. **Operating model** — seven controlled gates from confirmed scope to accepted handover.
 4. **Customer value** — the path from readiness to clinician adoption and continuous learning.
 5. **Selected career evidence and accountability** — additional delivery outcomes and clear decision rights across Implementation, specialists, Product, Engineering, and clinical leads.
