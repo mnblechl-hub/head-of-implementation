@@ -19,7 +19,7 @@ Career figures and outcomes are sourced from Megan's résumé. The capacity exer
 The page has six main sections:
 
 1. **Why I fit / verified evidence** — a real regulation-driven program spanning 30+ US healthcare organisations.
-2. **First six weeks at Heidi** — a proposed portfolio view, capacity decision, pre-engineering commitment gate, scope-classification process, executive and technical kickoff, and three-week manager ramp.
+2. **First six weeks at Heidi** — a proposed portfolio view, capacity decision, pre-engineering commitment check, scope-classification process, executive and technical kickoff, and three-week manager ramp.
 3. **Operating model** — seven controlled gates from confirmed scope to accepted handover.
 4. **Customer value** — the path from readiness to clinician adoption and continuous learning.
 5. **Team and accountability** — clear decision rights across Implementation, specialists, Product, Engineering, and clinical leads.
@@ -32,7 +32,7 @@ The verified evidence also includes repeated multi-site delivery, executive-to-t
 
 Continuous-improvement evidence includes designing and implementing a solution-specific lessons-learned framework in Microsoft Lists that converted insights from individual client engagements into reusable practices for later implementations.
 
-The opening section surfaces five recruiter-level measures immediately: 40+ enterprise healthcare technology engagements, up to seven concurrent enterprise engagements, implementation capability supported across 10+ countries, 30+ professionals led on the regulation-driven deployment program, and broader multidisciplinary delivery teams of 20+. CHIA remains presented as a credential rather than a metric.
+The opening section surfaces five recruiter-level measures immediately: 40+ enterprise healthcare technology engagements, up to seven concurrent enterprise engagements, implementation capability supported across 10+ countries, 30+ professionals led on the regulation-driven deployment program, and up to 10 direct reports managed. CHIA remains presented as a credential rather than a metric.
 
 Location is stated accurately: Brisbane-based and available for regular Sydney presence and customer travel; relocation is not implied.
 

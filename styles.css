@@ -155,7 +155,7 @@ h3 { margin: 0; }
 .flagship-proof { display: grid; grid-template-columns: 300px 1fr; gap: 34px; padding: 26px; border: 1px solid #49445f; border-radius: 12px; }
 .flagship-proof span { color: var(--lime); font-size: 11px; font-weight: 700; line-height: 1.6; letter-spacing: 1px; }
 .flagship-proof p { margin: 0; color: #ddd9e8; font-size: 15px; line-height: 1.7; }
-.fit-signals { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 18px; }
+.fit-signals { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 18px; }
 .fit-signals article { padding: 20px 24px; border: 1px solid #49445f; border-radius: 12px; }
 .fit-signals span { color: var(--lime); font-size: 10px; font-weight: 700; letter-spacing: 1px; }
 .fit-signals p { margin: 9px 0 0; color: #ddd9e8; font-size: 13px; line-height: 1.6; }
