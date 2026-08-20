@@ -43,6 +43,7 @@ There are only two interactive ideas to understand:
 - `index.html` contains the content and page structure.
 - `styles.css` contains all layout and visual styling.
 - `script.js` contains the two interactions.
+- `Megan_Blechl_Heidi_Head_of_Implementation.pdf` is the downloadable résumé used by the site CTAs.
 
 There is no framework, build step, package installation, browser storage, or application state.
 
