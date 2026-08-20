@@ -1,10 +1,3 @@
-const main = document.querySelector('main');
-const preferredSectionOrder = ['case-study', 'decisions', 'method', 'outcomes', 'fit', 'ramp'];
-const closingStatement = document.querySelector('.closing-statement');
-
-preferredSectionOrder.forEach(id => main.append(document.getElementById(id)));
-main.append(closingStatement);
-
 const briefModal = document.getElementById('briefModal');
 const briefOpeners = document.querySelectorAll('#briefButton, #caseBriefButton');
 const briefClosers = document.querySelectorAll('.modal-close, .modal-done');
