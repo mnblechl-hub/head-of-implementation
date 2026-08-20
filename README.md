@@ -5,7 +5,7 @@ A focused evidence portfolio and operating-model proposal created by Megan Blech
 The site shows how a complex health-system implementation function can:
 
 - qualify delivery and technical dependencies before commitments are made;
-- move deployments through evidence-based stage gates;
+- move deployments through evidence-based readiness checkpoints;
 - translate blockers into executive decisions;
 - manage scarce implementation and engineering capacity;
 - protect Product and Engineering from avoidable custom work;
@@ -20,7 +20,7 @@ The page has six main sections:
 
 1. **Why I fit / verified evidence** — a real regulation-driven program spanning 30+ US healthcare organisations.
 2. **First six weeks at Heidi** — a proposed portfolio view, capacity decision, pre-engineering commitment check, scope-classification process, executive and technical kickoff, and three-week manager ramp.
-3. **Operating model** — seven controlled gates from confirmed scope to accepted handover.
+3. **Operating model** — seven readiness checkpoints from confirmed scope to accepted handover.
 4. **Customer value** — the path from readiness to clinician adoption and continuous learning.
 5. **Team and accountability** — clear decision rights across Implementation, specialists, Product, Engineering, and clinical leads.
 6. **Targeted 90-day ramp** — a candid plan for learning Heidi's identity and SSO architecture, security, product, and clinical-governance context.
@@ -73,7 +73,7 @@ You can also open `index.html` directly. Internet access is used only for the tw
 In a short interview walkthrough:
 
 1. State the three leadership principles in the opening section.
-2. Explain why evidence is required to pass each implementation gate.
+2. Explain why evidence is required to pass each implementation readiness checkpoint.
 3. Walk through the 30+ organisation program and explain how the repeatable model reduced delivery time.
 4. Explain why go-live is not the final outcome and how adoption is measured.
 5. Use the first-six-weeks artifacts to explain capacity, pre-contract readiness, scope classification, kickoff governance, and team ramp.
