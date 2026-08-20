@@ -22,8 +22,9 @@ The page has six main sections:
 2. **First six weeks at Heidi** — a proposed portfolio view, capacity decision, pre-engineering commitment gate, scope-classification process, executive and technical kickoff, and three-week manager ramp.
 3. **Operating model** — seven controlled gates from confirmed scope to accepted handover.
 4. **Customer value** — the path from readiness to clinician adoption and continuous learning.
-5. **Selected career evidence and accountability** — additional delivery outcomes and clear decision rights across Implementation, specialists, Product, Engineering, and clinical leads.
+5. **Team and accountability** — clear decision rights across Implementation, specialists, Product, Engineering, and clinical leads.
 6. **Targeted 90-day ramp** — a candid plan for learning Heidi's identity and SSO architecture, security, product, and clinical-governance context.
+7. **Expandable verified career evidence** — optional deeper proof including delivery efficiency, first-of-kind integration, scope judgment, accelerated go-live, clinical value, and people leadership.
 
 Career evidence includes clinical-workflow impact and people development: barcode-enabled implant traceability reduced recall investigation from up to 72 hours to near real time, and multiple direct reports progressed into team-lead and leadership roles.
 
@@ -37,7 +38,7 @@ Location is stated accurately: Brisbane-based and available for regular Sydney p
 
 There are only two interactive ideas to understand:
 
-- open and close the career evidence summary;
+- expand and collapse the verified career evidence;
 - select a capacity option to reveal its consequence.
 
 ## Files
