@@ -32,7 +32,7 @@ The verified evidence also includes repeated multi-site delivery, executive-to-t
 
 Continuous-improvement evidence includes designing and implementing a solution-specific lessons-learned framework in Microsoft Lists that converted insights from individual client engagements into reusable practices for later implementations.
 
-The opening section surfaces five recruiter-level measures immediately: 40+ enterprise healthcare technology engagements, up to seven concurrent enterprise engagements, implementation capability supported across 10+ countries, 30+ professionals led on a regulation-driven deployment program and up to 10 direct reports managed. CHIA remains presented as a credential rather than a metric.
+The opening section surfaces five recruiter-level measures immediately: 40+ enterprise healthcare technology engagements, up to seven concurrent enterprise engagements, implementation capability supported across 10+ countries, 30+ professionals led on a regulation-driven deployment program and up to 10 direct reports at one time. CHIA remains presented as a credential rather than a metric.
 
 Location is stated accurately: Brisbane-based and available for regular Sydney presence and customer travel; relocation is not implied.
 
